@@ -1,0 +1,14 @@
+dtuong	String	100
+hoten	String	100
+nsinh	String	20
+nu	String	1
+ma_so	String	20
+dchi	String	100
+tinh	String	100
+bvien	String	100
+muc_dong	Number
+tu_thang	String	100
+dau_thang	String	100
+tso	Number
+so_tien	Number
+gchu	String	100

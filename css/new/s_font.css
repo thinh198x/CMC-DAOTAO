@@ -1,0 +1,1314 @@
+﻿html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font: 13px arial, helvetica, clean, sans-serif;
+    color: #000000;
+    outline: none;
+}
+
+input:focus, textarea:focus, tr:focus, button:focus
+{
+    outline: none;
+}
+.css_menu_bar_ac:hover,.css_menu_bar_de:hover,.css_menu_bar_log:hover,.css_menu_nhom:hover,.css_menu_item:hover,
+.css_button:hover,.css_button_l:hover,.css_menu_login:hover,.css_tab_ngang_ac:hover,.css_tab_ngang_de:hover
+{
+    background: url('images/butt_hv.jpg') repeat-x;
+    color: #0000DD;
+}
+/*Tieu de cua form #DFDFDF url(images/title_gr.jpg) repeat-y scroll left top*/
+.fr_title
+{
+    background:#F2F2F8;
+    height: 20px;
+}
+.css_panel
+{
+	background-color:#d4d0c8;
+	text-align:center;
+	vertical-align:middle;
+}
+.css_tieude
+{
+	font-size:18px;
+	font-weight:bold;
+	background-color:Transparent;
+	color:#0000DD;
+	text-align:left;
+}
+.css_tieudeM
+{
+	font-size:24px;
+	font-weight:bold;
+	background-color:Transparent;
+	color:#FFF;
+	text-align:left;
+    line-height:40px;
+    padding-left:20px;
+}
+.css_tieudeN
+{
+	background: url('images/nen/header_bg.png') repeat-x;
+}
+.css_phude
+{
+	font-size:14px;
+	font-weight:bold;
+	background-color:Transparent;
+	text-align:center;
+	color:#0000DD;
+}
+.css_button
+{
+    padding: 1px 3px;
+    border-radius: 5px;
+    border: 1px solid #b9b9b9;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background: url('images/butt_bg.jpg') repeat-x;
+    color: #5e5e5e;
+}
+.css_buttonf
+{
+    background: url('images/menu_hover.png') repeat-x;
+    color: #FFFFFF;
+}
+.css_button_l
+{
+	background: url('images/butt_bg.jpg') repeat-x;
+	padding: 1px 3px;
+    border-radius: 5px;
+	border:1px solid #b9b9b9;
+	font-size:12px;
+	height:23px;
+	text-align:center;
+	vertical-align:middle;
+	color:#5e5e5e;
+}
+.css_button_lf
+{
+    background: url('images/menu_hover.png') repeat-x;
+    color: #FFFFFF;
+}
+.css_button:focus,.css_button_l:focus
+{
+    background: url('images/menu_hover.png') repeat-x;
+    color: #FFFFFF;
+}
+.css_slide
+{
+    background: url('images/butt_bg.jpg') repeat-x;
+    padding: 1px 3px;
+    border: 1px solid #b9b9b9;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    color: #5e5e5e;
+}
+.css_scrl
+{
+    text-align: left;
+    background: url('images/g_ng.jpg') repeat-y;
+}
+.css_scrl_td
+{
+    vertical-align:bottom;
+    background-color:#d7d7d7;
+}
+.css_dao_dat
+{
+	font-family:Courier New;
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+    cursor:pointer;
+}
+.css_dao_xem
+{
+	font-family:Courier New;
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+}
+.css_kh_de_da
+{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url('images/nen/nguoisd_bg.png') no-repeat;
+    padding-bottom:3px;
+    background-color:transparent;
+    color:#FFF;
+}
+.css_kh_sa_ng
+{
+    text-align: center;
+    vertical-align: middle;
+    background: url('images/nen/md_bg.png') no-repeat;
+    line-height:18px;
+    padding-bottom:1px;
+    background-color:transparent;
+    color:#363636;
+    font-weight:bold;
+}
+.css_kh_sa_da
+{
+    text-align: center;
+    background: url('images/bitmaps/kh_sa_da.png') no-repeat;
+    line-height:18px;
+    padding-bottom:2px;
+    background-color:transparent;
+    color:#363636;
+}
+.css_ng_da
+{
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:18px;
+    background-color:#E1E1E1;
+    color:#363636;
+    border:none;
+    padding-bottom:4px;
+}
+.css_md_da
+{
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:18px;
+    background-color:#E1E1E1;
+    color:#363636;
+    border:none;
+    font-weight:bold;
+}
+.css_kh_da
+{
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:20px;
+    background-color:#535353;
+    color:#FFF;
+    border:none;
+    padding-bottom:1px;
+}
+.css_lket_dat_LUU
+{
+	font-weight:bold;
+	color:Blue;
+	text-align:center;
+    cursor:pointer;
+}
+.css_lket_xem_LUU
+{
+	font-weight:bold;
+	color:Blue;
+	text-align:center;
+}
+.css_lket
+{
+    font-family: Tahoma;
+    font-size: 10px;
+    font-weight: bold;
+    color: White;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    line-height:20px;
+    padding-bottom:4px;
+}
+
+.css_lket_do
+{
+    background: url('images/bitmaps/tr_do.png') no-repeat;
+}
+.css_lket_va
+{
+    background: url('images/bitmaps/tr_va.png') no-repeat;
+}
+.css_lket_xa
+{
+    background: url('images/bitmaps/tr_xa.png') no-repeat;
+}
+.css_lket_dat
+{
+cursor:pointer;
+}
+.css_ngay
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_ma
+{
+	font-family:Courier New;
+	font-size:14px;
+    text-align: left;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_ma_c
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_ma_r
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:right;
+ 	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.css_tong
+{
+	font-family:Courier New;
+    border: 1px solid lightgray;
+	font-size:14px;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:left;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong_c
+{
+	font-family:Courier New;
+    border: 1px solid lightgray;
+	font-size:14px;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:center;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong_r
+{
+	font-family:Courier New;
+    border: 1px solid lightgray;
+	font-size:14px;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:right;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong_s
+{
+    border: 1px solid lightgray;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:left;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_so
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:right;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_so_l
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:left;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_so_c
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_list
+{
+	text-align:left;
+	border: 1px solid #DBDBDB;
+	height:17px;
+	padding-left:2px;
+	padding-right:2px;
+    background: #FFF url('images/bitmaps/xuongL.bmp') no-repeat right;
+}
+.css_list_c
+{
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	height:17px;
+	padding-left:2px;
+	padding-right:2px;
+    background: #FFF url('images/bitmaps/xuongL.bmp') no-repeat right;
+}
+.css_drop,.css_drop_flag
+{
+    text-decoration: none;
+    text-align: left;
+    color: Black;
+    background-color: #CBDAE1;
+    border: 1px solid #DBDBDB;
+}
+.css_drop::selection, .css_drop_flag::selection
+{
+    background-color: #0066FF;
+    color: White;
+}
+.css_drop_flag
+{
+    padding-left:20px;
+}
+.css_nd
+{
+	text-align:left;
+	border: 1px solid #DBDBDB;
+	height:17px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_Mnd
+{
+    font: 11px arial, helvetica, clean, sans-serif;
+    color:Blue;
+}
+.css_nd_c
+{
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_nd_r
+{
+	text-align:right;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tbao
+{
+	text-align:center;
+	vertical-align:middle;
+	background-color:#FFFFD5;
+}
+.css_gchu
+{
+	background-color:Transparent;
+	width:auto;
+	text-align:left;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_c
+{
+	background-color:Transparent;
+	width:auto;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_r
+{
+	background-color:Transparent;
+	width:auto;
+	text-align:right;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_e
+{
+	background-color:Transparent;
+	color:Red;
+	width:auto;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_a
+{
+    color: #000000;
+    text-align: left;
+    background-color: Transparent;
+    width: auto;
+    text-align: left;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_be
+{
+	font-size:8px;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_batbuoc
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:left;
+	color:Red;
+}
+.css_goiy
+{
+	text-align:left;
+	color:Gray;
+}
+.css_tab_doc_ac
+{
+    background-color:transparent;
+    border-right: 1px solid #FA9B00;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Vertical tab default*/
+.css_tab_doc_de
+{
+    background-color:transparent;
+    border-top: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-top-right-radius:7px;
+}
+/*Horizontal tab selected*/
+.css_tab_ngang_ac
+{
+    background-color: #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-top: 1px solid #FA9B00;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: #363636;
+    cursor: pointer;
+    padding-top: 2px;
+    border-top-left-radius:8px;
+}
+/*Horizontal tab default*/
+.css_tab_ngang_de
+{
+    background-color: #cbdae1;
+    border-left: 1px solid #CCCCCC;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: #707070;
+    cursor: pointer;
+    padding-top: 2px;
+    border-top-left-radius:8px;
+}
+.css_link_nhom
+{
+    height:19px;
+	text-align:center;
+	vertical-align:middle;
+    color:white;
+    background-color:#5078B3;
+}
+.css_link_X
+{
+    height:19px;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	color:Blue;
+	border-bottom:solid #FFFFFF 1px;
+	background-color:#E0FFFF;
+	cursor:pointer;
+}
+.css_link_L
+{
+    height:19px;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	color:Blue;
+	border-bottom:solid #FFFFFF 1px;
+	background-color:#CCFFFF;
+	cursor:pointer;
+}
+.css_link_D
+{
+    height:19px;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	color:Blue;
+	border-bottom:solid #FFFFFF 1px;
+	background-color:#FFC0CB;
+	cursor:pointer;
+}
+.css_link_V
+{
+    height:19px;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	color:Blue;
+	border-bottom:solid #FFFFFF 1px;
+	background-color:#FFFFE0;
+	cursor:pointer;
+}
+.css_link_T
+{
+    height:19px;
+	text-decoration:none;
+	text-align:center;
+	vertical-align:middle;
+	color:Blue;
+	border-bottom:solid #FFFFFF 1px;
+	background-color:#FFFFFF;
+	cursor:pointer;
+}
+.css_ttrang_X
+{
+	text-align:left;
+	color:Blue;
+	background-color:#E0FFFF;
+}
+.css_ttrang_D
+{
+	text-align:left;
+	color:Blue;
+	background-color:#FFC0CB;
+}
+
+/*menu*/
+.css_menu_bar_ac
+{
+    font-family: Arial;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    background-color: #008000;
+    cursor: default;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px;
+}
+.css_menu_bar_de
+{
+    font-family: Arial;
+    font-size: 13px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    background-color: #008080;
+    cursor: default;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px;
+}
+.css_menu_bar_log
+{
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    background-color:#ef7600;
+    background-color:#ef7600;
+    cursor: default;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px;
+   
+}
+.css_menu_li {
+    font-family: Arial;
+    font-size: 13px;
+	text-align:left;
+	vertical-align:middle;	
+	border-width: 1px  1px  1px 0px;
+	border-style: solid;
+	border-color: #FFFFFF #D9D9D9 #D9D9D9;
+}
+.css_menu_item {
+	cursor:pointer;
+	background-color:#f6f6f6;
+}
+.css_menu_nhom {
+	cursor:pointer;
+	font-weight:bold;
+	background-color:#f6f6f6;
+}
+.css_menu_ngan_chu {
+	background-color:#D0E0B4;
+}
+.css_menu_login {
+	color:#FFFFFF;
+	cursor:pointer;
+	font-weight:bold;
+	background-color:#ef7600;
+}
+.css_menu_col {
+	color:white;
+	background-color:#EF7600;
+	border-bottom:solid 1px silver;
+	text-decoration:none;
+}
+.css_modal
+{
+    background-color: #F8F8F8;
+	filter:alpha(opacity=50);
+	opacity:0.75;
+}
+.css_grH
+{
+	font-weight:bold;
+	background-color:#D9EBFF;
+	text-align:center;
+	color:#0000DD;
+	height:20px
+}
+.gridX 
+{
+    table-layout:fixed;
+    border-spacing:1px;
+}
+.gridX th, .gridX td
+{
+    overflow: hidden;
+    border: 1px solid lightgray;
+    height:18px;
+ }
+.gridX_hang
+{
+	background-color:White;
+}
+.gridX_cot
+{
+	font-size:12px;
+	text-align:center;
+	background-color:#d7d7d7;
+	color:#363636;
+}
+.css_Gma
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:left;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 3px;
+}
+.css_GmaB
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:left;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 3px;
+    font-weight: bold;
+}
+.css_Gma_c
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:center;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 0;
+}
+.css_Gma_r
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:right;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 0;
+}
+.css_Gngay
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:center;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 0;
+}
+.css_Gso
+{
+	font-family:Courier New;
+	font-size:14px;
+	text-align:right;
+	border: 0 none transparent;
+	height:14px;
+	padding: 0 3px 2px 0;
+}
+.css_Gnd
+{
+	text-align:left;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 3px;
+}
+.css_Glist
+{
+	text-align:left;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 3px;
+    background: #FFF url('images/bitmaps/xuongL.bmp') no-repeat right;
+}
+.css_Mlist
+{
+	text-align:left;
+	border: 0 none transparent;
+	padding:0 0 2px 3px;
+    background: #FFF url('images/bitmaps/xuongL.bmp') no-repeat right 3px;
+}
+.css_MlistC
+{
+    background: #0d72be;
+    color: #fff;
+}
+.css_Gdrop
+{
+	text-align:left;
+	text-decoration:none;
+	border: 0 none transparent;
+	line-height:18px;
+	height:18px;
+	vertical-align:top;
+}
+/* CSS cho menu */
+.css_nsd
+{
+	padding-right: 10px;
+	background: 0 5px;
+	font-weight:bold;
+}
+.css_help
+{
+    width:80px;
+	cursor:pointer;
+	background: url(images/menu/helpM.png) no-repeat 10px 3px;
+	padding-left:12px;
+	text-align:left;
+}
+.css_help:hover
+{
+    background: #F7941D url(images/menu/helpMh.png) no-repeat 10px 3px;
+    color: White;
+}
+.css_gop {
+    width:90px;
+	cursor:pointer;
+	background: url(images/menu/gopM.png) no-repeat 10px 5px;
+	padding-left:15px;
+	text-align:left;
+}
+.css_gop:hover {
+	background: #F7941D url(images/menu/gopMh.png) no-repeat 10px 5px;
+	color: White;
+}
+.css_tlap
+{
+    width:90px;
+	cursor:pointer;
+	background: url(images/menu/tlapM.png) no-repeat 10px 3px;
+	padding-left:20px;
+	text-align:left;
+}
+.css_tlap:hover
+{
+    background:#F7941D url(images/menu/tlapMh.png) no-repeat 10px 3px;
+    color: White;
+}
+
+.css_Mct
+{
+    cursor: pointer;
+    width: 93px; height: 93px;
+    background: url(images/menu/Mct.png) no-repeat -5px;
+    color: #EFEFEF;
+    font-size: 0;
+    text-align:center;
+}
+.css_MctAc
+{
+    cursor: pointer;
+    width: 93px; height: 93px;
+    background: url(images/menu/MctAc.png) no-repeat;
+    color:#075F9D;
+    font-size: 0;
+    text-align:center;
+}
+.css_Mbc 
+{
+	cursor:pointer;
+    width:93px; height:93px;
+	background: url(images/menu/Mbc.png) no-repeat;
+	color:#EFEFEF;
+	font-size:0;
+	text-align:center;
+}
+.css_MbcAc 
+{
+	cursor:pointer;
+    width:93px; height:93px;
+	background: url(images/menu/MbcF.png) no-repeat;
+	color:#075F9D;
+	font-size:0;
+	text-align:center;
+}
+.css_Mra
+{
+	cursor:pointer;
+    width:95px; height:93px;
+	background: url(images/menu/thoat.png) no-repeat;
+	color:#EFEFEF;
+	font-size:0;
+	text-align:center;
+}
+.css_Mct:hover,.css_MctAc:hover,.css_Mbc:hover,.css_MbcAc:hover,.css_Mra:hover
+{
+    background: url(images/menu/tronV.png) no-repeat;
+	color:White;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+.css_menuCt
+{
+    font:bold 16px Arial;
+    padding-left:20px;
+}
+.css_menuC
+{
+	cursor:pointer;
+	background: url(images/menu/menuC.png) no-repeat;
+	width:493px; height:36px;
+}
+.css_menuCf
+{
+	cursor:pointer;
+	background: url(images/menu/menuCf.png) no-repeat;
+	width:493px; height:36px;
+	color:White;
+}
+.css_menuC:hover,.css_menuCf:hover
+{
+	background: url(images/menu/menuCh.png) no-repeat;
+	color:White;
+}
+
+.css_MdauC
+{
+	background: url(images/menu/MdauC.png) no-repeat -5px 10px;
+	width:960px; height:36px;
+}
+.css_MdauB
+{
+	background: url(images/menu/MdauB.png) no-repeat -5px 10px;
+	width:960px; height:36px;
+}
+.css_Mgiua
+{
+	height:36px;
+	border-left:1px solid #C2C2C2;
+	border-right:1px solid #C2C2C2;
+	padding: 0 0 0 5px;
+	background-color:White;
+}
+.css_Mday
+{
+	background: url(images/menu/Mday.png) no-repeat -5px -10px;
+	height:12px;
+}
+
+.css_menuPt
+{
+    font-size:14px;
+    padding-left:5px;
+}
+.css_menuP
+{ 
+	text-align:left;
+	cursor:pointer;
+	height:36px;
+}
+.css_menuP:hover
+{
+	background: url(images/menu/menuPh.png) no-repeat 3px 3px;
+	color:White;
+}
+.css_menuPc
+{
+	background: url(images/menu/menuPc.png) no-repeat;
+	width:17px;
+}
+.css_menuPc:hover
+{
+	background: url(images/menu/menuPch.png) no-repeat;
+}
+.css_menuPl
+{
+	text-align:left;
+	cursor:pointer;
+	height:36px;
+	background: url(images/menu/menuPl.png) no-repeat 3px 3px;
+}
+.css_menuPlf
+{
+	text-align:left;
+	cursor:pointer;
+	height:36px;
+	background: url(images/menu/menuPlf.png) no-repeat 3px 3px;
+	color:White;
+}
+.css_menuPl:hover,.css_menuPlf:hover
+{
+	background: url(images/menu/menuPlh.png) no-repeat 3px 3px;
+	color:White;
+}
+.css_menuPn
+{ 
+	text-align:left;
+	height:36px;
+	background: url(images/menu/menuPn.png) no-repeat 3px 3px;
+}
+.css_Pdau
+{
+	background: url(images/menu/Pdau.png) no-repeat 0px 26px;
+	width:272px; height:36px;
+}
+.css_Pgi
+{
+    background:White url(images/menu/Pgi.png) repeat-y;
+    text-align:center;
+}
+.css_Pday
+{
+	background: url(images/menu/Pday.png) no-repeat 0px -10px;
+	height:12px;
+}
+.css_MduTen
+{
+    font-size: 14px;
+    padding-left:40px;
+}
+.css_MduDan
+{
+    font-size: 10px;
+    padding-left: 40px;
+    color: #959595;
+}
+.css_MduXoa
+{
+    background: url(images/menu/MduXoa.png) no-repeat;
+    width:20px; height:20px;
+}
+.css_MduXoa:hover
+{
+    background: url(images/menu/MduXoaH.png) no-repeat;
+}
+.css_MduNen
+{
+    cursor:pointer;
+    background: url(images/menu/MduNen.png) no-repeat;
+    width:400px; height:55px;
+}
+.css_MduNen:hover
+{
+    background: url(images/menu/MduNenH.png) no-repeat;
+}
+
+.css_HeStGx
+{
+    background: url('images/bitmaps/xuong.bmp') no-repeat right;
+}
+.css_HeStGl
+{
+    background: url('images/bitmaps/len.bmp') no-repeat right;
+}
+.css_HeStGp
+{
+    background: url('images/bitmaps/trong.bmp') no-repeat right;
+}
+.css_HeStGpl
+{
+    background: url('images/bitmaps/loc.bmp') no-repeat right;
+}
+.css_HeStGxl
+{
+    background: url('images/bitmaps/xuongloc.bmp') no-repeat right;
+}
+.css_HeStGll
+{
+    background: url('images/bitmaps/lenloc.bmp') no-repeat right;
+}
+.css_divOver {
+    background-color:transparent;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+.css_divCt {
+    position:absolute;
+    border:1px solid #C0C0C0;
+    background-color: #E9E9D1;
+}
+
+.css_divb {
+    position: relative;
+    display: inline-block;
+}
+.css_divDn {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.css_divD
+{
+	position: absolute;
+	width: 19px;
+	height:100%;
+	border: 1px solid #d2dadf;
+	background-color: #f5f7f9;
+	right:-18px;
+}
+.css_divD > div
+{
+	position: absolute;
+	height:100%;
+	bottom: 0;
+}
+.css_divD .css_divDk
+{
+	position:absolute;
+	background-color:#c0c0c0;
+	width: 18px;
+	height: 40px;
+	top: 19px;
+	margin-left:0;
+	cursor: pointer;
+}
+.css_divD .css_divDl
+{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	cursor: pointer;
+	top: 0;
+	border-bottom: 1px solid #d2dadf;
+    background: url('images/bitmaps/scrldivL.png') no-repeat center;
+}
+.css_divD .css_divDx
+{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	cursor: pointer;
+	bottom: 0;
+	border-top: 1px solid #d2dadf;
+    background: url('images/bitmaps/scrldivX.png') no-repeat center;
+}
+
+.css_divNb,.css_divDb
+{
+	position:relative;
+}
+.css_divNn
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.css_divN
+{
+	height: 19px;
+	background-color: #f5f7f9;
+	border: 1px solid #d2dadf;
+}
+.css_divN > div
+{
+	position: relative;
+	bottom: 0;
+}
+.css_divN .css_divNk
+{
+	position: absolute;
+	height: 17px;
+    left: 19px;
+	margin-top: 1px;
+	cursor: pointer;
+	background-color:#c0c0c0;
+}
+.css_divN .css_divNt
+{
+	position: absolute;
+	width: 19px;
+	height: 18px;
+	text-align: center;
+    vertical-align:middle;
+	left: 0;
+	cursor: pointer;
+	border-right: 1px solid #d2dadf;
+    background: url('images/bitmaps/scrldivT.png') no-repeat center;
+}
+.css_divN .css_divNp
+{
+	position: absolute;
+	width: 19px;
+	height: 18px;
+	text-align: center;
+    vertical-align:middle;
+	right: 0;
+	cursor: pointer;
+	border-left: 1px solid #d2dadf;
+    background: url('images/bitmaps/scrldivP.png') no-repeat center;
+}
+
+.css_divN .css_divLk
+{
+	position: absolute;
+	height: 18px;
+    width:20px;
+    left: 19px;
+    vertical-align: middle;
+	cursor: pointer;
+    background: url('images/bitmaps/scrldivKn.png') no-repeat center;
+}
+.css_divN .css_divLg
+{
+	position: absolute;
+	width: calc(100% - 94px);
+	height: 18px;
+	left: 19px;
+    background: url('images/bitmaps/scrldivGn.jpg') repeat-x center;
+}
+.css_divN .css_divLh
+{
+	position: absolute;
+	height: 18px;
+    width: 56px;
+	text-align: center;
+    vertical-align:middle;
+	right: 19px;
+	font: 400 13px/20px arial;
+}
+
+.css_divC
+{
+	position: absolute;
+	width: 19px;
+	height:calc(100% - 2px);
+	border: 1px solid #d2dadf;
+	background-color: #f5f7f9;
+	right:-20px;
+    border-left:none;
+}
+.css_divLeft {
+    float: left;
+}
+.css_divRight {
+    float: right;
+}
+.css_divGr {
+    padding-right:5px;
+    padding-left:5px;
+}
+.css_divGrS {
+    padding-right:25px;
+    padding-left:5px;
+}
+.css_divCn {
+    float: left;
+}
+.css_divC .css_divCk
+{
+	position:absolute;
+	width: 18px;
+	height: 20px;
+	top: 19px;
+	margin-left:0;
+	cursor: pointer;
+    background: url('images/bitmaps/scrldivKd.png') no-repeat center;
+}
+.css_divC .css_divCl
+{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	cursor: pointer;
+	top: 0;
+	border-bottom: 1px solid #d2dadf;
+    background: url('images/bitmaps/scrldivL.png') no-repeat center;
+}
+.css_divC .css_divCx
+{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	cursor: pointer;
+	bottom: 0;
+	border-top: 1px solid #d2dadf;
+    background: url('images/bitmaps/scrldivX.png') no-repeat center;
+}
+.css_divC .css_divCg
+{
+	position: absolute;
+	width: 18px;
+	height: calc(100% - 94px);
+	top: 19px;
+    background: url('images/bitmaps/scrldivGd.jpg') repeat-y center;
+}
+.css_divC .css_divCh
+{
+	position: absolute;
+	width: 56px;
+    height: 18px;
+	text-align: center;
+    vertical-align: middle;
+    right:-18px;
+	bottom: 38px;
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+	font: 400 13px/18px arial;
+}

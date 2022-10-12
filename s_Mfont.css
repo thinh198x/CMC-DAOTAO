@@ -1,0 +1,464 @@
+﻿html,body {
+   margin:0;
+   padding:0;
+   height:100%;
+   font: 22px arial, helvetica, clean, sans-serif;
+   color: #000000;
+   outline: none;
+}
+
+input:focus, textarea:focus, tr:focus, button:focus
+{
+    outline: none;
+}
+.css_menu_bar_ac:hover,.css_menu_bar_de:hover,.css_menu_bar_log:hover,.css_menu_nhom:hover,.css_menu_item:hover,
+.css_button:hover,.css_button_l:hover,.css_menu_login:hover,.css_tab_ngang_ac:hover,.css_tab_ngang_de:hover
+{
+    background: url(images/butt_hv.jpg) repeat-x;
+    color: #0000DD;
+}
+/*Tieu de cua form #DFDFDF url(images/title_gr.jpg) repeat-y scroll left top*/
+.fr_title
+{
+    background:#F2F2F8;
+    height: 20px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+.css_panel
+{
+	background-color:#d4d0c8;
+	text-align:center;
+	vertical-align:middle;
+}
+.css_tieude
+{
+	font-size:18px;
+	font-weight:bold;
+	background-color:Transparent;
+	color:#0000DD;
+	text-align:left;
+}
+.css_tieudeM
+{
+	font-size:24px;
+	font-weight:bold;
+	background-color:Transparent;
+	color:#FFF;
+	text-align:left;
+    line-height:40px;
+    padding-left:20px;
+}
+.css_tieudeN
+{
+	background: url(images/nen/header_bg.png) repeat-x;
+}
+.css_phude
+{
+	font-size:20px;
+	font-weight:bold;
+	background-color:Transparent;
+	text-align:center;
+	color:#0000DD;
+}
+.css_button
+{
+    padding: 1px 3px;
+    -moz-border-radius: 5px;
+    border: 1px solid #b9b9b9;
+    height: 28px;
+    font-size:22px;
+    text-align: center;
+    vertical-align: middle;
+    background: url(images/butt_bg.jpg) repeat-x;
+    color: #5e5e5e;
+}
+.css_buttonf
+{
+    background: url(images/menu_hover.png) repeat-x;
+    color: #FFFFFF;
+}
+.css_button_l
+{
+	background: url(images/butt_bg.jpg) repeat-x;
+	padding: 1px 3px;
+	-moz-border-radius:5px;
+	border:1px solid #b9b9b9;
+	font-size:12px;
+	height:23px;
+	text-align:center;
+	vertical-align:middle;
+	color:#5e5e5e;
+}
+.css_button_lf
+{
+    background: url(images/menu_hover.png) repeat-x;
+    color: #FFFFFF;
+}
+.css_button:focus,.css_button_l:focus
+{
+    background: url(images/menu_hover.png) repeat-x;
+    color: #FFFFFF;
+}
+.css_dao_dat
+{
+	font-family:Courier New;
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+    cursor:pointer;
+}
+.css_dao_xem
+{
+	font-family:Courier New;
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+}
+.css_kh_de_da
+{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url(images/nen/nguoisd_bg.png) no-repeat;
+    padding-bottom:3px;
+    background-color:transparent;
+    color:#FFF;
+}
+.css_kh_sa_ng
+{
+    text-align: center;
+    vertical-align: middle;
+    background: url(images/nen/md_bg.png) no-repeat;
+    line-height:18px;
+    padding-bottom:1px;
+    background-color:transparent;
+    color:#363636;
+    font-weight:bold;
+}
+.css_kh_sa_da
+{
+    text-align: center;
+    background: url(images/bitmaps/kh_sa_da.png) no-repeat;
+    line-height:18px;
+    padding-bottom:2px;
+    background-color:transparent;
+    color:#363636;
+}
+.css_ngay
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_ma
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:left;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_ma_c
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_ma_r
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:right;
+ 	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong
+{
+	font-family:Courier New;
+    border: 1px solid lightgray;
+	font-size:20px;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:left;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong_c
+{
+	font-family:Courier New;
+    border: 1px solid lightgray;
+	font-size:20px;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:center;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong_r
+{
+	font-family:Courier New;
+    border: 1px solid lightgray;
+	font-size:20px;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:right;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tong_s
+{
+    border: 1px solid lightgray;
+	color:Blue;
+	background-color:#F9F8CF;
+	text-align:left;
+	height:18px;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_so
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:right;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_so_l
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:left;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_so_c
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_drop,.css_drop_flag
+{
+    text-decoration: none;
+    text-align: left;
+    color: Black;
+    background-color: #CBDAE1;
+    border: 1px solid #DBDBDB;
+}
+.css_drop:select, .css_drop_flag:select
+{
+    background-color: #0066FF;
+    color: White;
+}
+.css_drop_flag
+{
+    padding-left:20px;
+}
+.css_nd {
+    text-align: left;
+    border: 1px solid #DBDBDB;
+    font-size: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.css_Bnd {
+    text-align: left;
+    border: none;
+    font-size: 20px;
+    padding-left: 5px;
+    position:absolute;
+    bottom:0px;
+}
+.css_Mnd
+{
+    font: 18px arial, helvetica, clean, sans-serif;
+	color:Blue;
+}
+.css_nd_c
+{
+	text-align:center;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_nd_r
+{
+	text-align:right;
+	border: 1px solid #DBDBDB;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_tbao
+{
+	text-align:center;
+	vertical-align:middle;
+	background-color:#FFFFD5;
+}
+.css_gchu
+{
+	background-color:Transparent;
+	width:auto;
+	text-align:left;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_c
+{
+	background-color:Transparent;
+	width:auto;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_r
+{
+	background-color:Transparent;
+	width:auto;
+	text-align:right;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_e
+{
+	background-color:Transparent;
+	color:Red;
+	width:auto;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_gchu_a
+{
+    color: #000000;
+    text-align: left;
+    background-color: Transparent;
+    width: auto;
+    text-align: left;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_be
+{
+	font-size:8px;
+	text-align:center;
+	padding-left:2px;
+	padding-right:2px;
+}
+.css_batbuoc
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:left;
+	color:Red;
+}
+.css_goiy
+{
+	text-align:left;
+	color:Gray;
+}
+.css_modal
+{
+    background-color: #F8F8F8;
+	filter:alpha(opacity=50);
+	opacity:0.75;
+}
+.css_Gma
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:left;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 3px;
+}
+.css_Gma_c
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:center;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 0;
+}
+.css_Gma_r
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:right;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 0;
+}
+.css_Gso
+{
+	font-family:Courier New;
+	font-size:20px;
+	text-align:right;
+	border: 0 none transparent;
+	height:14px;
+	padding: 0 3px 2px 0;
+}
+.css_Gnd
+{
+	text-align:left;
+	border: 0 none transparent;
+	height:14px;
+	padding:0 0 2px 3px;
+}
+.css_Gdrop
+{
+	text-align:left;
+	text-decoration:none;
+	border: 0 none transparent;
+	line-height:18px;
+	height:18px;
+	vertical-align:top;
+}
+.css_Pdau
+{
+	background: url(images/menu/Pdau.png) no-repeat 0px 26px;
+	width:272px; height:36px;
+}
+.css_Pgi
+{
+    background:White url(images/menu/Pgi.png) repeat-y;
+    text-align:center;
+}
+.css_Pday
+{
+	background: url(images/menu/Pday.png) no-repeat 0px -10px;
+	height:12px;
+}
+.css_div
+{
+    background-color:#fff;
+    border:2px solid #fff;
+    border-radius:3px;
+    box-shadow:0 2px 6px rgba(0,0,0,.3);
+    cursor:pointer;
+    margin-bottom:22px;
+    text-align:center;
+    color:rgb(25,25,25);
+    font-family:Roboto,Arial,sans-serif;
+    font-size:18px;
+    line-height:20px;
+    padding-left:5px;
+    padding-right:5px;
+}

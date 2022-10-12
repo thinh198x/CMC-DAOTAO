@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="~/App_Code/ns/tl/sns_tl.cs"  Class="sns_tl" %>

@@ -1,0 +1,6 @@
+ten	String	100
+loai_hd	String	100
+so_hd	String	100
+ngay_bd	String	20
+ngay_kt	String	20
+g_chu	String	100

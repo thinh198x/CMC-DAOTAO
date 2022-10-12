@@ -1,0 +1,163 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data;
+using Cthuvien;
+using Word = Microsoft.Office.Interop.Word;
+using System.Diagnostics;
+
+
+/// <summary>
+/// Thu vien tao file word - content controls. Su dung thu vien VSTO
+/// </summary>
+public class CVSTOWord
+{
+    string b_tendocx_in, b_tendocx_out, b_doc_out_htm;
+    DataSet b_ds;
+
+    object confirmConversions = false;
+    object readOnly = false;
+    object visible = true;
+    object missing = Type.Missing;
+    Word.Application word = null;
+    Microsoft.Office.Interop.Word.Document doc = null;
+
+
+	public CVSTOWord(string b_ddan, string b_ten_rp, DataSet b_kq)
+	{
+        string b_c1 = b_ten_rp.Replace(".docx", "").Replace(".xml", "");
+        string b_doc_kq = "~/Outputs/" + b_c1 + DateTime.Now.ToString("yyyyMMdd_hhmmss") + "_" + (new se.se_nsd()).nsd + ".docx";
+        b_tendocx_out = HttpContext.Current.Server.MapPath(b_doc_kq);
+        b_tendocx_in = HttpContext.Current.Server.MapPath(b_ddan + b_c1 + ".docx");
+        b_doc_out_htm = b_doc_kq;
+
+        b_ds = b_kq.Copy();
+	}
+    public string Fs_Ten_file_out()
+    {
+        return b_doc_out_htm;
+    }
+    public void P_TAO_WORD()
+    {
+        object inputFile = @b_tendocx_out;
+        System.IO.File.Delete(@b_tendocx_out);
+        System.IO.File.Copy(@b_tendocx_in, @b_tendocx_out);
+        string b_cc_dd ="";
+        try
+        {
+            word = new Microsoft.Office.Interop.Word.Application();
+            doc = word.Documents.Open(
+                ref inputFile, ref confirmConversions, ref readOnly, ref missing,
+                ref missing, ref missing, ref missing, ref missing,
+                ref missing, ref missing, ref missing, ref visible,
+                ref missing, ref missing, ref missing, ref missing);
+            string b_nd = "";
+            int b_dem = 1;
+            foreach (Microsoft.Office.Interop.Word.ContentControl cc in doc.ContentControls)
+            {
+                if (cc.Tag != null)
+                {
+                    b_cc_dd = cc.Tag;
+                    b_nd = Fs_Tra_gtri(cc.Tag, b_ds);
+                    if (b_nd.Trim() != "") Fcc_CHEN_TXT(cc, b_nd);
+                }
+                b_dem++;
+                if (b_dem > 50) break;
+            }
+            object doSaveChanges = Word.WdSaveOptions.wdSaveChanges;
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(doc);
+            ((Word._Application)word).Quit(ref doSaveChanges, ref missing, ref missing);
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(word);
+        }
+        catch
+        {
+            doc.Paragraphs.Last.Range.InsertAfter("Loi Content Control: " + b_cc_dd);
+            //doc.Paragraphs.First.Range.Text = "Loi Content Control: " + b_cc_dd ;
+            object doSaveChanges = Word.WdSaveOptions.wdSaveChanges;
+            //object doNotSaveChanges = Word.WdSaveOptions.wdDoNotSaveChanges;
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(doc);
+            //((Word._Application)word).Quit(ref doNotSaveChanges, ref missing, ref missing);
+            ((Word._Application)word).Quit(ref doSaveChanges, ref missing, ref missing);
+            System.Runtime.InteropServices.Marshal.ReleaseComObject(word);
+        }
+    }
+    protected string Fs_Tra_gtri(string b_ten_cc, DataSet b_ds)
+    {
+        string b_nd = "";
+        foreach (DataTable b_dt in b_ds.Tables)
+        {
+            if (b_ten_cc.StartsWith(b_dt.TableName.ToUpper()))
+            {
+                if (b_dt.Rows.Count > 0)
+                {
+                    foreach (DataColumn b_dc in b_dt.Columns)
+                    {
+                        if (b_dt.TableName.ToUpper().Trim() + b_dc.ColumnName.ToUpper().Trim() == b_ten_cc)
+                        {
+                            b_nd = @b_dt.Rows[0][b_dc].ToString();
+                        }
+                    }
+                }
+            }
+            if (b_nd != "") break;
+        }
+        return b_nd;
+    }
+    protected void Fcc_CHEN_TXT(Word.ContentControl b_cc, string b_nd)
+    {
+        string b_nd_1 = b_nd.Replace("\\t","\t").Replace("\\r","\r");
+        DataTable b_dt;
+        int b_ixdong = b_nd.IndexOf("\r");
+        int b_ibold = b_nd.IndexOf("<b>");
+        if (b_ixdong > 0)
+        {
+            if (b_cc.Type != Word.WdContentControlType.wdContentControlRichText)
+                b_nd_1 = b_nd_1.Replace("\r", "");
+        }
+        if (b_ibold > 0)
+        {
+            b_dt = Fdt_cat_dam(ref b_nd_1);
+            b_cc.Range.Text = b_nd_1;
+
+            Word.Range rngCC = b_cc.Range;
+            Word.Range rngFormat = rngCC.Duplicate;
+            foreach (DataRow b_dr in b_dt.Rows)
+            {
+                rngFormat.Start = rngCC.Characters[(int)(Double)b_dr["dau"]].Start;
+                rngFormat.End = rngCC.Characters[(int)(Double)b_dr["cuoi"]].End;
+                rngFormat.Font.Bold = -1;
+            }
+            return;
+        }
+        b_cc.Range.Text = b_nd_1;
+    }
+    protected DataTable Fdt_cat_dam(ref string b_nd)
+    {
+        DataTable b_dt = new System.Data.DataTable();
+        b_dt.Columns.Add("dau", Type.GetType("System.Double"));
+        b_dt.Columns.Add("cuoi", Type.GetType("System.Double"));
+        int id = b_nd.IndexOf("<b>");
+        int ic = b_nd.IndexOf("</b>") - 3;
+        if (id > 0)
+        {
+            b_dt.Rows.Add(new object[] { id, ic });
+        }
+        int ilap = 1;
+        int itim = b_nd.IndexOf("<b>", ic);
+        while (itim > 0)
+        {
+            id = b_nd.IndexOf("<b>", ic);
+            ic = b_nd.IndexOf("</b>", id);
+            b_dt.Rows.Add(new object[] { id - 7 * ilap, ic - 7 * ilap - 3 });
+            ilap++;
+            if (b_nd.Length > itim + 7)
+                itim = b_nd.IndexOf("<b>", itim + 7);
+            else itim = -1;
+        }
+        b_dt.AcceptChanges();
+        b_nd = b_nd.Replace("<b>", "");
+        b_nd = b_nd.Replace("</b>", "");
+        return b_dt;
+    }
+}

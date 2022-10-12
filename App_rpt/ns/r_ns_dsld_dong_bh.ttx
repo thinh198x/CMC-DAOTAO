@@ -1,0 +1,19 @@
+ho_ten		String	100
+ma_so		String	100
+nsinh		String	100
+gtinh		String	100
+so_cmt		String	100
+dchi		String	100
+ma_tinh		String	100
+ma_bvien		String	100
+cvu		String	100
+tien_luong		Number
+pcap_cvu		Number
+pcap_tnvk		Number
+pcap_tnn		Number
+pcap_khac	Number
+thangd		String	100
+so_hd		String	100
+ngay_hd		String	100
+loai_hd		String	100
+gchu		String	100

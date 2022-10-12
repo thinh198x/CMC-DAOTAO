@@ -1,0 +1,23 @@
+stt	String	10
+loai	String	100
+pban	String	100
+ten	String	100
+nam_nu	String	100
+nu	String	100
+nsinh	String	100
+cvu	String	100
+tdo	String	100
+tdh	String	100
+dh	String	100
+cd	String	100
+tc	String	100
+cn	String	100
+dttc	String	100
+hd_kxd	Number
+hd_3nam	Number
+hd_duoi1	Number
+hsl	Number
+pc_cvu	Number
+pc_kv	Number
+ngay_v	String	100
+ngay_ct	String	100

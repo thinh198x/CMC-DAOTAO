@@ -1,0 +1,7 @@
+﻿1. tra cuu thong tin nhan su: phong,ten,id...        x
+2. dat lich bao trc				x
+3. đây lien ket sẵn ở các màn hình nhập liệu 	
+4. anh trong database    moi insert anh, chua luu trong database	x
+5. danh sách nv thôi việc ( bảng history nhân sự)			
+6. form thông tin tuyển dụng
+7. bổ sung túi hồ sơ

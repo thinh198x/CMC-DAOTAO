@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>YenCan</Author>
+  <LastAuthor>YenCan</LastAuthor>
+  <Created>2013-10-31T16:18:16Z</Created>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>4755</WindowHeight>
+  <WindowWidth>15345</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="BCDANH" ss:RefersTo="=&quot;BCDANH&quot;"/>
+  <NamedRange ss:Name="BCDANHC" ss:RefersTo="=&quot;BCDANHC&quot;"/>
+  <NamedRange ss:Name="BCDANHCV" ss:RefersTo="=&quot;BCDANHCV&quot;"/>
+  <NamedRange ss:Name="BCDANHM" ss:RefersTo="=&quot;BCDANHM&quot;"/>
+  <NamedRange ss:Name="BCVU" ss:RefersTo="=&quot;BCVU&quot;"/>
+  <NamedRange ss:Name="BGCHU" ss:RefersTo="=&quot;BGCHU&quot;"/>
+  <NamedRange ss:Name="BGTINH" ss:RefersTo="=&quot;BGTINH&quot;"/>
+  <NamedRange ss:Name="BHOTEN" ss:RefersTo="=&quot;BHOTEN&quot;"/>
+  <NamedRange ss:Name="BLOAI" ss:RefersTo="=&quot;BLOAI&quot;"/>
+  <NamedRange ss:Name="BNAM" ss:RefersTo="=&quot;BNAM&quot;"/>
+  <NamedRange ss:Name="BNGAYD" ss:RefersTo="=&quot;BNGAYD&quot;"/>
+  <NamedRange ss:Name="BNOTE" ss:RefersTo="=&quot;BNOTE&quot;"/>
+  <NamedRange ss:Name="BNSINH" ss:RefersTo="=&quot;BNSINH&quot;"/>
+  <NamedRange ss:Name="BPHONG" ss:RefersTo="=&quot;BPHONG&quot;"/>
+  <NamedRange ss:Name="BPHONGC" ss:RefersTo="=&quot;BPHONGC&quot;"/>
+  <NamedRange ss:Name="BPHONGM" ss:RefersTo="=&quot;BPHONGM&quot;"/>
+  <NamedRange ss:Name="BSMLRepeat" ss:RefersTo="=&quot;BSMLRepeat&quot;"/>
+  <NamedRange ss:Name="BSO_THE" ss:RefersTo="=&quot;BSO_THE&quot;"/>
+  <NamedRange ss:Name="BSOLUONG" ss:RefersTo="=&quot;BSOLUONG&quot;"/>
+  <NamedRange ss:Name="BSOLUONG_sum" ss:RefersTo="=&quot;BSOLUONG_sum&quot;"/>
+  <NamedRange ss:Name="BSOTT" ss:RefersTo="=&quot;BSOTT&quot;"/>
+  <NamedRange ss:Name="BTAMUNG" ss:RefersTo="=&quot;BTAMUNG&quot;"/>
+  <NamedRange ss:Name="BTEN" ss:RefersTo="=&quot;BTEN&quot;"/>
+  <NamedRange ss:Name="BTHANG" ss:RefersTo="=&quot;BTHANG&quot;"/>
+  <NamedRange ss:Name="BTRINHDO" ss:RefersTo="=&quot;BTRINHDO&quot;"/>
+  <NamedRange ss:Name="BVITRI" ss:RefersTo="=&quot;BVITRI&quot;"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Width="65.25"/>
+   <Column ss:Width="82.5"/>
+   <Column ss:Width="60.75"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:Index="6" ss:Width="51"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="6" ss:StyleID="s63"><Data ss:Type="String">DANH SÁCH THUYÊN CHUYỂN</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Stt</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Họ tên</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Từ bộ phận</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Đến bộ phận mới</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Vị trí cũ</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Vị trí mới</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Từ ngày </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66" ss:Formula="=BSOTT"><Data ss:Type="String">BSOTT</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=BHOTEN"><Data ss:Type="String">BHOTEN</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=BPHONGC"><Data ss:Type="String">BPHONGC</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=BPHONGM"><Data ss:Type="String">BPHONGM</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=BCDANHC"><Data ss:Type="String">BCDANHC</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=BCDANHM"><Data ss:Type="String">BCDANHM</Data></Cell>
+    <Cell ss:StyleID="s66" ss:Formula="=BNGAYD"><Data ss:Type="String">BNGAYD</Data></Cell>
+    <Cell ss:Formula="=BSMLRepeat"><Data ss:Type="String">BSMLRepeat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s66"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

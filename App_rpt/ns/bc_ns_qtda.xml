@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>YenCan</Author>
+  <LastAuthor>Phung Quoc Tuan</LastAuthor>
+  <Created>2013-10-31T16:18:16Z</Created>
+  <LastSaved>2017-06-12T12:16:37Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>5772</WindowHeight>
+  <WindowWidth>17256</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Normal 2">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="16" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Italic="1"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s69" ss:Parent="s62">
+   <Alignment ss:Vertical="Center"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000"
+    ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="BCVTH" ss:RefersTo="=&quot;BCVTH&quot;"/>
+  <NamedRange ss:Name="BDANHGIAHT" ss:RefersTo="=&quot;BDANHGIAHT&quot;"/>
+  <NamedRange ss:Name="BNGUOITH" ss:RefersTo="=&quot;BNGUOITH&quot;"/>
+  <NamedRange ss:Name="BPHONG" ss:RefersTo="=&quot;BPHONG&quot;"/>
+  <NamedRange ss:Name="BSMLRepeat" ss:RefersTo="=&quot;BSMLRepeat&quot;"/>
+  <NamedRange ss:Name="BSOGIOGIAO" ss:RefersTo="=&quot;BSOGIOGIAO&quot;"/>
+  <NamedRange ss:Name="BSOTT" ss:RefersTo="=&quot;BSOTT&quot;"/>
+  <NamedRange ss:Name="TSODUAN" ss:RefersTo="=&quot;TSODUAN&quot;"/>
+  <NamedRange ss:Name="TSOGDG" ss:RefersTo="=&quot;TSOGDG&quot;"/>
+  <NamedRange ss:Name="TSOGKH" ss:RefersTo="=&quot;TSOGKH&quot;"/>
+  <NamedRange ss:Name="TSOGQLRR" ss:RefersTo="=&quot;TSOGQLRR&quot;"/>
+  <NamedRange ss:Name="TSONGAY" ss:RefersTo="=&quot;TSONGAY&quot;"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Width="48.6"/>
+   <Column ss:Width="93.600000000000009"/>
+   <Column ss:Width="66"/>
+   <Column ss:Width="62.400000000000006"/>
+   <Column ss:Width="71.400000000000006"/>
+   <Column ss:Width="84.600000000000009"/>
+   <Row ss:AutoFitHeight="0" ss:Height="37.200000000000003">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">BÁO CÁO QUẢN TRỊ DỰ ÁN</Data></Cell>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s64" ss:Formula="=TSODUAN"><Data ss:Type="String">TSODUAN</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s64" ss:Formula="=TSOGKH"><Data ss:Type="String">TSOGKH</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s64" ss:Formula="=TSOGDG"><Data ss:Type="String">TSOGDG</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s64" ss:Formula="=TSOGQLRR"><Data ss:Type="String">TSOGQLRR</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s65">
+    <Cell ss:MergeAcross="5" ss:StyleID="s67"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="13.2" ss:StyleID="s69">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">STT</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Công việc đã thực hiện</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Người thực hiện</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Phòng</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Số giờ được giao</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Đánh giá hoàn thành</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71" ss:Formula="=BSOTT"><Data ss:Type="String">BSOTT</Data></Cell>
+    <Cell ss:StyleID="s71" ss:Formula="=BCVTH"><Data ss:Type="String">BCVTH</Data></Cell>
+    <Cell ss:StyleID="s71" ss:Formula="=BNGUOITH"><Data ss:Type="String">BNGUOITH</Data></Cell>
+    <Cell ss:StyleID="s71" ss:Formula="=BPHONG"><Data ss:Type="String">BPHONG</Data></Cell>
+    <Cell ss:StyleID="s71" ss:Formula="=BSOGIOGIAO"><Data ss:Type="String">BSOGIOGIAO</Data></Cell>
+    <Cell ss:StyleID="s71" ss:Formula="=BDANHGIAHT"><Data ss:Type="String">BDANHGIAHT</Data></Cell>
+    <Cell ss:Formula="=BSMLRepeat"><Data ss:Type="String">BSMLRepeat</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

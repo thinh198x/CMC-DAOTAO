@@ -1,0 +1,13 @@
+1. sp xep phòng ban theo sap xep hình cây - ok
+2. luu nhân su lich su 
+3. tìm kiem loc theo chuc danh, ngày vào, loc theo ngày sinh
+4. anh ()
+5. bao cao nhan su
+
+-- yeu cau moi ngay 25.10
+2. tao thong tin tat ca moi nguoi co nghiep vu tu A->Z
+3. tim kiem nhan su vao dc 4 nam
+4. skill: ai da lam PM 3 du an
+	ai co ky nang oracle va dang o dau
+6. nhung nguoi sau 2 nam chua dc tang luong
+7. nhung nguoi co luong tren 10tr

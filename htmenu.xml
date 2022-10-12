@@ -1,0 +1,182 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="htmenu" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="htmenu">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ma" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ten" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ma_ct" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ftkhao" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="qu" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tso" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="che" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="bar" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <htmenu>
+    <ma>htnb</ma>
+    <ten>Hệ thống nội bộ</ten>
+    <ma_ct>0</ma_ct>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ht_madvi</ma>
+    <ten>Mã đơn vị</ten>
+    <ma_ct>htnb</ma_ct>
+    <ftkhao>~/App_form/ht/ht_madvi.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ht_maph</ma>
+    <ten>Mã bộ phận</ten>
+    <ma_ct>htnb</ma_ct>
+    <ftkhao>~/App_form/ht/ht_maph.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ht_macb</ma>
+    <ten>Mã cán bộ</ten>
+    <ma_ct>htnb</ma_ct>
+    <ftkhao>~/App_form/ht/ht_macb.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ht_macvu</ma>
+    <ten>Mã chức vụ</ten>
+    <ma_ct>htnb</ma_ct>
+    <ftkhao>~/App_form/ht/ht_macvu.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ktht_manhom</ma>
+    <ten>Mã nhóm</ten>
+    <ma_ct>htnb</ma_ct>
+    <ftkhao>~/App_form/ht/ht_manhom.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ktht_mansd</ma>
+    <ten>Mã NSD</ten>
+    <ma_ct>htnb</ma_ct>
+    <ftkhao>~/App_form/ht/ht_mansd.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>khma</ma>
+    <ten>Hệ thống mã chung</ten>
+    <ma_ct>0</ma_ct>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>khma_maloaidn</ma>
+    <ten>Mã loại doanh nghiệp</ten>
+    <ma_ct>khma</ma_ct>
+    <ftkhao>~/App_form/khma/khma_maloaidn.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>khma_manuoc</ma>
+    <ten>Mã nước</ten>
+    <ma_ct>khma</ma_ct>
+    <ftkhao>~/App_form/khma/khma_manuoc.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>khma_makvuc</ma>
+    <ten>Mã khu vực</ten>
+    <ma_ct>khma</ma_ct>
+    <ftkhao>~/App_form/khma/khma_makvuc.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>khma_manh</ma>
+    <ten>Mã ngân hàng</ten>
+    <ma_ct>khma</ma_ct>
+    <ftkhao>~/App_form/khma/khma_manh.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>khma_manhtk</ma>
+    <ten>Mã tài khoản ngân hàng</ten>
+    <ma_ct>khma</ma_ct>
+    <ftkhao>~/App_form/khma/khma_manhtk.aspx</ftkhao>
+    <qu>KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ktkh</ma>
+    <ten>Số liệu</ten>
+    <ma_ct>0</ma_ct>
+    <qu>KT,KT</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ktkh_slnv</ma>
+    <ten>Ưu tiên theo nghiệp vụ</ten>
+    <ma_ct>ktkh</ma_ct>
+    <ftkhao>~/App_form/ktkh/ktkh_slnv.aspx</ftkhao>
+    <qu>KT,KT,NX</qu>
+  </htmenu>
+  <htmenu>
+    <ma>ktkh_han</ma>
+    <ten>Hạn thay đổi số liệu</ten>
+    <ma_ct>ktkh</ma_ct>
+    <ftkhao>~/App_form/ktkh/ktkh_han.aspx</ftkhao>
+    <qu>KT,KT,NX</qu>
+  </htmenu>
+</NewDataSet>

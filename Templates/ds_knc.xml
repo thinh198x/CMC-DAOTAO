@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2011-05-30T08:34:49Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8010</WindowHeight>
+  <WindowWidth>14805</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>105</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="BGDOAN" ss:RefersTo="=&quot;BGDOAN&quot;"/>
+  <NamedRange ss:Name="BGT" ss:RefersTo="=&quot;BGT&quot;"/>
+  <NamedRange ss:Name="BNAM_CTAC" ss:RefersTo="=&quot;BNAM_CTAC&quot;"/>
+  <NamedRange ss:Name="BNAM_QDOI" ss:RefersTo="=&quot;BNAM_QDOI&quot;"/>
+  <NamedRange ss:Name="BNAM_TTE" ss:RefersTo="=&quot;BNAM_TTE&quot;"/>
+  <NamedRange ss:Name="BNDUNG" ss:RefersTo="=&quot;BNDUNG&quot;"/>
+  <NamedRange ss:Name="BNGAY_QD" ss:RefersTo="=&quot;BNGAY_QD&quot;"/>
+  <NamedRange ss:Name="BNSINH" ss:RefersTo="=&quot;BNSINH&quot;"/>
+  <NamedRange ss:Name="BQQUAN" ss:RefersTo="=&quot;BQQUAN&quot;"/>
+  <NamedRange ss:Name="BSMLRepeat" ss:RefersTo="=&quot;BSMLRepeat&quot;"/>
+  <NamedRange ss:Name="BSO_QD" ss:RefersTo="=&quot;BSO_QD&quot;"/>
+  <NamedRange ss:Name="BTEN" ss:RefersTo="=&quot;BTEN&quot;"/>
+  <NamedRange ss:Name="BTEN_CVU" ss:RefersTo="=&quot;BTEN_CVU&quot;"/>
+  <NamedRange ss:Name="BTEN_DVI_NH" ss:RefersTo="=&quot;BTEN_DVI_NH&quot;"/>
+  <NamedRange ss:Name="BTEN_HT" ss:RefersTo="=&quot;BTEN_HT&quot;"/>
+  <NamedRange ss:Name="BTEN_PH" ss:RefersTo="=&quot;BTEN_PH&quot;"/>
+  <NamedRange ss:Name="BTT" ss:RefersTo="=&quot;BTT&quot;"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="17" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="30"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="201.75"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="72"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="43.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="87.75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="166.5" ss:Span="1"/>
+   <Column ss:Index="8" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="186"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:StyleID="s63" ss:AutoFitWidth="0" ss:Width="90.75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="72" ss:Span="3"/>
+   <Column ss:Index="15" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="186.75"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="78.75"/>
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:AutoFitHeight="0" ss:Height="19.5" ss:StyleID="s65">
+    <Cell ss:StyleID="s66"><Data ss:Type="String">TT</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Tên</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Ngày sinh</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Giới tính</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Chức vụ</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Đơn vị</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Phòng</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Quê quán</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Số QĐ</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Ngày QĐ</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Năm QĐ</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">N.C.tác</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">N.Q.đổi</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">N.C.thêm</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Nội dung</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Hình thức</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s68" ss:Formula="=BTT"><Data ss:Type="String">BTT</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BTEN"><Data ss:Type="String">BTEN</Data></Cell>
+    <Cell ss:StyleID="s69" ss:Formula="=BNSINH"><Data ss:Type="String">BNSINH</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BGT"><Data ss:Type="String">BGT</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BTEN_CVU"><Data ss:Type="String">BTEN_CVU</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BTEN_DVI_NH"><Data ss:Type="String">BTEN_DVI_NH</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BTEN_PH"><Data ss:Type="String">BTEN_PH</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BQQUAN"><Data ss:Type="String">BQQUAN</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BSO_QD"><Data ss:Type="String">BSO_QD</Data></Cell>
+    <Cell ss:StyleID="s69" ss:Formula="=BNGAY_QD"><Data ss:Type="String">BNGAY_QD</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BGDOAN"><Data ss:Type="String">BGDOAN</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BNAM_CTAC"><Data ss:Type="String">BNAM_CTAC</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BNAM_QDOI"><Data ss:Type="String">BNAM_QDOI</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BNAM_TTE"><Data ss:Type="String">BNAM_TTE</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BNDUNG"><Data ss:Type="String">BNDUNG</Data></Cell>
+    <Cell ss:StyleID="s68" ss:Formula="=BTEN_HT"><Data ss:Type="String">BTEN_HT</Data></Cell>
+    <Cell ss:Formula="=BSMLRepeat"><Data ss:Type="String">BSMLRepeat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>2</SplitHorizontal>
+   <TopRowBottomPane>2</TopRowBottomPane>
+   <SplitVertical>2</SplitVertical>
+   <LeftColumnRightPane>2</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>14</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

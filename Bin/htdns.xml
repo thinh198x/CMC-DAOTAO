@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="htdns">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dns" type="xs:string" minOccurs="0" />
+                <xs:element name="ten" type="xs:string" minOccurs="0" />
+                <xs:element name="ma_dvi" type="xs:string" minOccurs="0" />
+                <xs:element name="ip" type="xs:string" minOccurs="0" />
+                <xs:element name="port" type="xs:string" minOccurs="0" />
+                <xs:element name="db" type="xs:string" minOccurs="0" />
+                <xs:element name="loai" type="xs:string" minOccurs="0" />
+                <xs:element name="dbo" type="xs:string" minOccurs="0" />
+                <xs:element name="nsd" type="xs:string" minOccurs="0" />
+                <xs:element name="pas" type="xs:string" minOccurs="0" />
+                <xs:element name="tmfile" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema> 
+  <htdns>
+    <dns>LOGIN</dns>
+    <ten>Login</ten>
+    <ma_dvi>Login</ma_dvi>
+    <ip>103.21.148.20</ip>
+    <port>1521</port>
+    <db>TCDN</db>
+    <loai>ORA</loai>
+    <dbo>CMC_DAOTAO_V2</dbo>
+    <nsd>CMC_DAOTAO_V2</nsd>
+    <pas>a123</pas>
+    <tmfile>E:\\HRM\\CMC_DAOTAO</tmfile>
+  </htdns>
+</NewDataSet>

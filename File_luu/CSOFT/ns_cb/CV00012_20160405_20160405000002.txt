@@ -1,0 +1,69 @@
+Xin chào các bạn, Mình là Yên Đỗ - Hỗ trợ phần mềm Youtube Render Tools
+Hôm nay mình sẽ giới thiệu sản phẩm YRS này
+Tính năng nổi bật của phần mềm là SPAM youtube
+- Download youtube
+- Render Youtube Video
+- upload hàng trăm kênh Youtube cùng lúc
+- Mỗi video sẽ được cắt đi vài s để upload liên tục trên các kênh
+
+mình sẽ lấy ví dụ về video của mỹ tâm
+1. tính năng đầu tiên , download 1 hoặc nhiều video, hoặc cả 1 channel,
+sau khi download xong video tôi sẽ up lên kênh youtube và tất nhiên video này sẽ bị chặn rồi, hiển nhiên là thế :D
+xử lý lâu quá, đang check bản quyền đây mà.
+ok. kệ nó quay đi các bạn, giờ mình sẽ giới thiệu các bạn tính năng thứ 2. đó là download => render video
+2. download + Render
+vẫn sử dụng video đó nhé
+tôi sẽ xóa video gốc đi
+vừa rồi là file intro mình ghép vào video
+mình đang thực hiện bước download và render video luôn => các bạn sẽ thấy video out ra thế nào :D
+Trong lúc thực hiện chúng ta có thể làm đa luồng, 
+nếu cấu hình máy ngon, bạn có thể cho chạy download và render 10,20,30,... video cùng lúc
+vậy là render xong, chúng ta xem thành quả
+đã render xong và xuất hiện intro ở đầu
+giờ tôi sẽ xóa 2 file, gốc và render đó đi để demo cho các bạn tính năng thứ 30
+3. download => render => upload
+- mình sẽ reup cả 1 channel sang nhiều channel khác của mình 
+demo mình chọn 10 video của channel cho nhanh nhé, các bạn có thể chọn all :D
+để mình giải thích 1 số option trên màn hình
+
+      + File Type: Chọn kiểu đầu vào 
+			- 1 đường dẫn của video youtube
+			- đường dẫn của cả 1 channel
+			- đường dẫn foder file video
+			- đường dẫn của list file
+	  + Max Thread: Số luồng chạy cùng lúc
+	  + Scale: chỉnh lại độ phân giải khi render
+	  + intro file: file video intro cho vào render
+	  ....
+	  các tính năng khác các bạn youtuber chắc biết cả rồi
+	  Youtube channel upload: list danh sách channel sẽ up lên.có thể chọn 1 hoặc nhiều channel up lên cùng 1 lúc
+- up xong rồi đó các bạn, tính năng đặt lại thulbal sẽ làm được khi mà kênh của bạn đã xác minh tài khoản nhé :D
+
+nó đang chạy rồi
+Các bạn lưu ý : phần check: Delete video after upload : khi bạn check vào đây thì sau khi video được up nên channel thành công 
+sẽ tự xóa video gốc và video render ở dưới máy để cho các bạn sử dụng VPS không bị mất dung lượng ổ cứng khi cắm tool :D
+đang render rồi :D
+
+render xong rồi, đang upload,
+upload 1 video xong thì tool tiếp tục download và render và up tiếp ( đủ 3 luồng cùng 1 lúc như chúng ta setup)
+1 video đã xong,tool đang tiếp tục cho các video khác :D
+
+trong video mình có cắt đi 1 đoạn thời gian chờ render để các bạn đỡ mất thời gian xem	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  

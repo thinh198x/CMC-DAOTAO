@@ -1,0 +1,8 @@
+ma_dvi	String	20
+ten_dvi	String	100
+hthuc	String	100
+sl	Number
+sl_nam	Number
+sl_nu	Number
+ma_nhom	String	20
+ten_nhom	String	100

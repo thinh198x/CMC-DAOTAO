@@ -1,0 +1,318 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>QuangYen</Author>
+  <LastAuthor>QuangYen</LastAuthor>
+  <Created>2012-01-04T09:13:09Z</Created>
+  <LastSaved>2013-04-03T13:57:07Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>4620</WindowHeight>
+  <WindowWidth>14295</WindowWidth>
+  <WindowTopX>480</WindowTopX>
+  <WindowTopY>120</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="BBAC" ss:RefersTo="=&quot;BBAC&quot;"/>
+  <NamedRange ss:Name="BBCD" ss:RefersTo="=&quot;BBCD&quot;"/>
+  <NamedRange ss:Name="BCAPDT" ss:RefersTo="=&quot;BCAPDT&quot;"/>
+  <NamedRange ss:Name="BCDANH" ss:RefersTo="=&quot;BCDANH&quot;"/>
+  <NamedRange ss:Name="BCNGANH" ss:RefersTo="=&quot;BCNGANH&quot;"/>
+  <NamedRange ss:Name="BCVU" ss:RefersTo="=&quot;BCVU&quot;"/>
+  <NamedRange ss:Name="BDCHI" ss:RefersTo="=&quot;BDCHI&quot;"/>
+  <NamedRange ss:Name="BDTDD" ss:RefersTo="=&quot;BDTDD&quot;"/>
+  <NamedRange ss:Name="BDTNR" ss:RefersTo="=&quot;BDTNR&quot;"/>
+  <NamedRange ss:Name="BEMAIL" ss:RefersTo="=&quot;BEMAIL&quot;"/>
+  <NamedRange ss:Name="BGTINH" ss:RefersTo="=&quot;BGTINH&quot;"/>
+  <NamedRange ss:Name="BHEDT" ss:RefersTo="=&quot;BHEDT&quot;"/>
+  <NamedRange ss:Name="BHINHTHUC" ss:RefersTo="=&quot;BHINHTHUC&quot;"/>
+  <NamedRange ss:Name="BHKHAU" ss:RefersTo="=&quot;BHKHAU&quot;"/>
+  <NamedRange ss:Name="BHOCHAM" ss:RefersTo="=&quot;BHOCHAM&quot;"/>
+  <NamedRange ss:Name="BHSCD" ss:RefersTo="=&quot;BHSCD&quot;"/>
+  <NamedRange ss:Name="BHSO" ss:RefersTo="=&quot;BHSO&quot;"/>
+  <NamedRange ss:Name="BHSPC" ss:RefersTo="=&quot;BHSPC&quot;"/>
+  <NamedRange ss:Name="BLHD" ss:RefersTo="=&quot;BLHD&quot;"/>
+  <NamedRange ss:Name="BLINHV" ss:RefersTo="=&quot;BLINHV&quot;"/>
+  <NamedRange ss:Name="BLNG" ss:RefersTo="=&quot;BLNG&quot;"/>
+  <NamedRange ss:Name="BMAST" ss:RefersTo="=&quot;BMAST&quot;"/>
+  <NamedRange ss:Name="BNCD" ss:RefersTo="=&quot;BNCD&quot;"/>
+  <NamedRange ss:Name="BNGACH" ss:RefersTo="=&quot;BNGACH&quot;"/>
+  <NamedRange ss:Name="BNGAYD" ss:RefersTo="=&quot;BNGAYD&quot;"/>
+  <NamedRange ss:Name="BNHOM_CNGANH" ss:RefersTo="=&quot;BNHOM_CNGANH&quot;"/>
+  <NamedRange ss:Name="BNOIDT" ss:RefersTo="=&quot;BNOIDT&quot;"/>
+  <NamedRange ss:Name="BNSINH" ss:RefersTo="=&quot;BNSINH&quot;"/>
+  <NamedRange ss:Name="BPHONG" ss:RefersTo="=&quot;BPHONG&quot;"/>
+  <NamedRange ss:Name="BSMLRepeat" ss:RefersTo="=&quot;BSMLRepeat&quot;"/>
+  <NamedRange ss:Name="BSO_HD" ss:RefersTo="=&quot;BSO_HD&quot;"/>
+  <NamedRange ss:Name="BSO_THE" ss:RefersTo="=&quot;BSO_THE&quot;"/>
+  <NamedRange ss:Name="BSOCMT" ss:RefersTo="=&quot;BSOCMT&quot;"/>
+  <NamedRange ss:Name="BSOTT" ss:RefersTo="=&quot;BSOTT&quot;"/>
+  <NamedRange ss:Name="BTEN" ss:RefersTo="=&quot;BTEN&quot;"/>
+  <NamedRange ss:Name="BTHANGC" ss:RefersTo="=&quot;BTHANGC&quot;"/>
+  <NamedRange ss:Name="BTHANGD" ss:RefersTo="=&quot;BTHANGD&quot;"/>
+  <NamedRange ss:Name="BTIEN" ss:RefersTo="=&quot;BTIEN&quot;"/>
+  <NamedRange ss:Name="BTIENBH" ss:RefersTo="=&quot;BTIENBH&quot;"/>
+  <NamedRange ss:Name="BVB" ss:RefersTo="=&quot;BVB&quot;"/>
+  <NamedRange ss:Name="BXEPLOAI" ss:RefersTo="=&quot;BXEPLOAI&quot;"/>
+  <NamedRange ss:Name="THANGC" ss:RefersTo="=&quot;THANGC&quot;"/>
+ </Names>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="38" ss:ExpandedRowCount="5" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Width="52.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="60"/>
+   <Column ss:AutoFitWidth="0" ss:Width="77.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="64.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="63.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="57"/>
+   <Column ss:AutoFitWidth="0" ss:Width="65.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="93"/>
+   <Column ss:Index="11" ss:AutoFitWidth="0" ss:Width="58.5"/>
+   <Column ss:Width="60"/>
+   <Column ss:Width="81"/>
+   <Column ss:Width="72"/>
+   <Column ss:Width="60.75"/>
+   <Column ss:Width="86.25"/>
+   <Column ss:Width="72"/>
+   <Column ss:Width="63"/>
+   <Column ss:Index="20" ss:Width="89.25"/>
+   <Column ss:Width="71.25"/>
+   <Column ss:Width="73.5"/>
+   <Column ss:Width="81"/>
+   <Column ss:Width="72.75"/>
+   <Column ss:Width="64.5"/>
+   <Column ss:Index="27" ss:Width="69.75"/>
+   <Column ss:Width="53.25"/>
+   <Column ss:Width="46.5"/>
+   <Column ss:Width="50.25"/>
+   <Column ss:Width="111"/>
+   <Column ss:Width="100.5"/>
+   <Column ss:Width="70.5"/>
+   <Column ss:Width="87"/>
+   <Column ss:Width="97.5"/>
+   <Column ss:Width="81"/>
+   <Column ss:Width="138"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeAcross="9" ss:StyleID="s62"><Data ss:Type="String">BÁO CÁO THÔNG TIN NHÂN SỰ</Data></Cell>
+   </Row>
+   <Row ss:Index="3" ss:AutoFitHeight="0" ss:StyleID="s62">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Mã cán bộ</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Mã phòng</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Họ tên</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Giới tính</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Ngày sinh</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Số CMT</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Địa chỉ</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Hộ khẩu</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ĐTDD</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ĐTNR</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Email</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Mã số thuế</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Ngày vào đơn vị</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Cấp ĐT</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Hệ ĐT</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Ngành</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Chuyên ngành</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Nơi đào tạo</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Văn bằng</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Hình thức đào tạo</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Tháng bắt đầu</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Tháng kết thúc</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Xếp loại đào tạo</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Loại hợp đồng</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Số hợp đồng</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Chức vụ</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Hệ số phụ cấp</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Loại ngạch</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Ngạch</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Bậc ngạch</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Hệ số lương nhà nước</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Nhóm chức danh CV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Chức danh CV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Bậc chức danh CV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Hệ số chức danh CV</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Tổng tiền lương</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Tiền lương áp dụng đóng BH</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65" ss:Formula="=BSO_THE"><Data ss:Type="String">BSO_THE</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BPHONG"><Data ss:Type="String">BPHONG</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BTEN"><Data ss:Type="String">BTEN</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BGTINH"><Data ss:Type="String">BGTINH</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BNSINH"><Data ss:Type="String">BNSINH</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BSOCMT"><Data ss:Type="String">BSOCMT</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BDCHI"><Data ss:Type="String">BDCHI</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BHKHAU"><Data ss:Type="String">BHKHAU</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BDTDD"><Data ss:Type="String">BDTDD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BDTNR"><Data ss:Type="String">BDTNR</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BEMAIL"><Data ss:Type="String">BEMAIL</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BMAST"><Data ss:Type="String">BMAST</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BNGAYD"><Data ss:Type="String">BNGAYD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BCAPDT"><Data ss:Type="String">BCAPDT</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BHEDT"><Data ss:Type="String">BHEDT</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BNHOM_CNGANH"><Data ss:Type="String">BNHOM_CNGANH</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BCNGANH"><Data ss:Type="String">BCNGANH</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BNOIDT"><Data ss:Type="String">BNOIDT</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BVB"><Data ss:Type="String">BVB</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BHINHTHUC"><Data ss:Type="String">BHINHTHUC</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BTHANGD"><Data ss:Type="String">BTHANGD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BTHANGC"><Data ss:Type="String">BTHANGC</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BXEPLOAI"><Data ss:Type="String">BXEPLOAI</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BLHD"><Data ss:Type="String">BLHD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BSO_HD"><Data ss:Type="String">BSO_HD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BCVU"><Data ss:Type="String">BCVU</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BHSPC"><Data ss:Type="String">BHSPC</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BLNG"><Data ss:Type="String">BLNG</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BNGACH"><Data ss:Type="String">BNGACH</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BBAC"><Data ss:Type="String">BBAC</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BHSO"><Data ss:Type="String">BHSO</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BNCD"><Data ss:Type="String">BNCD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BCDANH"><Data ss:Type="String">BCDANH</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BBCD"><Data ss:Type="String">BBCD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BHSCD"><Data ss:Type="String">BHSCD</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BTIEN"><Data ss:Type="String">BTIEN</Data></Cell>
+    <Cell ss:StyleID="s65" ss:Formula="=BTIENBH"><Data ss:Type="String">BTIENBH</Data></Cell>
+    <Cell ss:Formula="=BSMLRepeat"><Data ss:Type="String">BSMLRepeat</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet3">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,109 @@
+.fe{
+	font:14px/16.5px Arial, serif;
+	color:#363636;
+	background-color:#EBEBEB;
+}
+
+/* Splash page general */
+.fe .page_deco_img{
+	position: fixed; z-index:-1;
+	top:0; left:50%; margin:0 0 0 -741px;
+}
+.fe #footer.splash{
+	position:absolute; bottom:15px; left:0;
+	width:100%; text-align:center;
+	font-size:12px; color:#898989;
+}
+.fe #cmc_logo.splash{
+	position:absolute; top:65px; left:50%; margin-left:-119px;
+	width:238px; height:75px;
+	background:url(imgs/splash_sprite.png) no-repeat 0 0;
+	text-indent:-238px; overflow:hidden;
+}
+
+.fe #controller.splash{
+	position:absolute; top:10px; right:35px;
+}
+.fe #controller.splash .user{
+	float: left; margin:0 20px 0 0;
+	font:bold 12px/19px Arial; color:#363636;
+}
+.fe #controller.splash .user span{
+	float:left; width:21px; height:19px; margin:0 5px 0 0;
+	background:url(imgs/splash_sprite.png) no-repeat -16px -75px;
+}
+.fe #controller.splash .logout{
+	float: left;
+	font:bold 12px/19px Arial; color:#898989;
+	text-transform:uppercase;
+}
+.fe #controller.splash .logout:hover{
+	color:#f7941d;
+}
+.fe #controller.splash .logout span{
+	float:left; width:15px; height:19px; margin:0 5px 0 0;
+	background:url(imgs/splash_sprite.png) no-repeat 0 -75px;
+}
+.fe #controller.splash .logout:hover span{
+	background-position:-37px -75px;
+}
+/* end of Splash page general */
+
+/* Splash page - 2 & 3 icons */
+.fe #main_program.big{
+	position:absolute; z-index:2;
+	width:972px; height:324px;
+	top:50%; left:50%;
+	margin:-160px 0 0 -486px;
+}
+.fe #main_program.two_icons{
+	width:648px;
+	margin-left:-324px;
+}
+.fe #main_program.big a{
+	float:left; width:294px; height:294px;
+	margin:15px;
+	background:url(imgs/splash_big_sprite.png) no-repeat;
+	text-indent:-324px; overflow:hidden;
+	position:relative;
+}
+.fe #main_program.big a:hover{
+	background-position:-294px 0;
+}
+.fe #main_program.big a span{
+	position:absolute; top:50%; left:50%; z-index:3;
+	width:169px; height:54px; margin:-27px 0 0 -84.5px;
+	background:url(imgs/splash_big_sprite.png) no-repeat;
+}
+.fe #main_program.big a#ceac span{background-position:-588px -75px}
+.fe #main_program.big a#cein span{background-position:-588px -129px}
+.fe #main_program.big a#cehr span{background-position:-588px -186px}
+/* end of Splash page - 2 & 3 icons */
+
+/* Splash page - more than 3 icons */
+.fe #main_program.small{
+	position:absolute; z-index:2; top:50%; left:50%;
+	width:800px; height:200px; margin:-160px 0 0 -400px;
+}
+.fe #main_program.small a{
+	float:left; width:160px; height:160px;
+	margin:20px;
+	background:url(imgs/splash_small_sprite.png) no-repeat;
+	text-indent:-200px; overflow:hidden;
+	position:relative;
+}
+.fe #main_program.small a:hover{
+	background-position:-161px 0;
+}
+.fe #main_program.small a span{
+	position:absolute; top:50%; left:50%; z-index:3;
+	width:118px; height:38px; margin:-19px 0 0 -59px;
+	background:url(imgs/splash_small_sprite.png) no-repeat;
+}
+.fe #main_program.small a#cein span{background-position:-322px -82px}
+.fe #main_program.small a#cein_2 span{background-position:-322px 0px}
+.fe #main_program.small a#ceac span,
+.fe #main_program.small a#ceac_2 span{background-position:-322px -41px}
+.fe #main_program.small a#cehr span,
+.fe #main_program.small a#cehr_2 span{background-position:-322px -123px}
+/* end of Splash page - more than 3 icons */

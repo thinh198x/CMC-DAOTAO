@@ -1,0 +1,56 @@
+﻿html,body{height:100%;font:13px arial, helvetica, clean, sans-serif;color:#000;margin:0;padding:0}
+.fr_title{background:#F2F2F8;height:20px;-moz-border-radius-topleft:10px;-moz-border-radius-topright:10px}
+.css_panel{background-color:#d4d0c8;text-align:center;vertical-align:middle}
+.css_tieude{font-family:Times New Roman;font-size:18px;font-weight:700;background-color:Transparent;color:#00D;text-align:left}
+.css_phude{font-family:Times New Roman;font-size:15px;font-weight:700;background-color:Transparent;text-align:center}
+.css_button{background:url(images/butt_bg.jpg) repeat-x;-moz-border-radius:5px;border:1px solid #b9b9b9;font-family:Arial, Helvetica, sans-serif;font-size:13px;height:25px;text-align:center;vertical-align:middle;font-weight:700;color:#5e5e5e;padding:1px 7px}
+.css_button_l{background:url(images/butt_bg.jpg) repeat-x;-moz-border-radius:5px;border:1px solid #b9b9b9;font-family:Arial, Helvetica, sans-serif;font-size:12px;height:23px;text-align:center;vertical-align:middle;font-weight:700;color:#5e5e5e;padding:1px 7px}
+.css_slide{background:url(images/butt_bg.jpg) repeat-x;-moz-border-radius:5px;border:1px solid #b9b9b9;font-family:Arial, Helvetica, sans-serif;font-size:13px;height:25px;text-align:center;vertical-align:middle;color:#5e5e5e;padding:1px 7px}
+.css_dao_dat{font-family:Courier New;font-size:15px;text-align:center;vertical-align:middle;cursor:pointer}
+.css_dao_xem{font-family:Courier New;font-size:15px;text-align:center;vertical-align:middle}
+.css_lket_dat{font-family:Times New Roman;font-size:14px;font-weight:700;color:Blue;text-align:center;cursor:pointer}
+.css_lket_xem{font-family:Times New Roman;font-size:14px;font-weight:700;color:Blue;text-align:center}
+.css_tong{border:1px solid #b9b9b9;font-family:Courier New;font-size:14px;height:19px;color:Blue;background-color:#F9F8CF;text-align:left;padding:1px 0}
+.css_tong_c{border:1px solid #b9b9b9;font-family:Courier New;font-size:14px;height:19px;color:Blue;background-color:#F9F8CF;text-align:center;padding:1px 0}
+.css_tong_r{border:1px solid #b9b9b9;font-family:Courier New;font-size:14px;height:19px;color:Blue;background-color:#F9F8CF;text-align:right;padding:1px 0}
+.css_drop_nen{font-family:Times New Roman;font-size:14px;background-color:#E6FFFF;color:Blue;text-align:left}
+.css_drop_chon{font-family:Times New Roman;font-size:14px;background-color:#FFFFD5;color:Blue;text-align:left}
+.css_nd{font-family:Times New Roman;font-size:14px;text-align:left}
+.css_nd_c{font-family:Times New Roman;font-size:14px;text-align:center}
+.css_nd_r{font-family:Times New Roman;font-size:14px;text-align:right}
+.css_tbao{font-family:Times New Roman;font-size:14px;text-align:center;vertical-align:middle;background-color:#FFFFD5}
+.css_gchu{font-family:Times New Roman;font-size:14px;background-color:Transparent;width:auto;text-align:left}
+.css_gchu_c{font-family:Times New Roman;font-size:14px;background-color:Transparent;width:auto;text-align:center}
+.css_gchu_r{font-family:Times New Roman;font-size:14px;background-color:Transparent;width:auto;text-align:right}
+.css_gchu_e{font-family:Times New Roman;font-size:14px;background-color:Transparent;color:Red;width:auto;text-align:center}
+.css_gchu_a{color:#000;font-family:arial;font-size:12px;background-color:Transparent;width:auto;text-align:left}
+.css_be{font-family:Times New Roman;font-size:8px;text-align:center}
+.css_batbuoc{font-family:Courier New;font-size:14px;text-align:left;color:Red}
+.css_goiy{font-family:Times New Roman;font-size:14px;text-align:left;color:Gray}
+.css_tab_doc_ac{background-color:#FFF;border-right:2px solid #FA9B00;border-top:1px solid #CCC;border-bottom:1px solid #CCC;font-weight:700;font-family:arial;font-size:13px;text-decoration:none;text-align:center;vertical-align:middle;color:#00D;cursor:pointer;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}
+.css_tab_doc_de{background-color:#BFFFFF;border-top:1px solid #CCC;font-weight:700;font-family:arial;font-size:13px;text-decoration:none;text-align:center;vertical-align:middle;color:#00D;cursor:pointer;-moz-border-radius-topright:5px;-moz-border-radius-bottomright:5px}
+.css_tab_ngang_ac{background-color:#FFF;border-left:1px solid #CCC;border-right:1px solid #CCC;border-top:2px solid #FA9B00;font-weight:700;font-family:arial;font-size:13px;text-decoration:none;text-align:center;vertical-align:middle;color:#00D;cursor:pointer;padding-top:2px;-moz-border-radius-topright:5px;-moz-border-radius-bottomright:5px}
+.css_tab_ngang_de{background-color:#BFFFFF;border-left:1px solid #CCC;font-weight:700;font-family:arial;font-size:13px;text-decoration:none;text-align:center;vertical-align:middle;color:#00D;cursor:pointer;padding-top:2px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px}
+.css_menu_bar_ac{font-family:Arial;font-size:13px;text-align:center;vertical-align:middle;color:#FFF;background-color:green;text-decoration:none;cursor:pointer;font-weight:700;padding:3px}
+.css_menu_bar_de{font-family:Arial;font-size:13px;text-align:center;vertical-align:middle;color:#FFF;background-color:teal;text-decoration:none;cursor:pointer;font-weight:700;padding:3px}
+.css_link_nhom{height:19px;font-family:Times New Roman;font-size:14px;text-align:center;vertical-align:middle;color:#FFF;background-color:#5078B3}
+.css_link_X{height:19px;font-family:Times New Roman;font-size:14px;text-decoration:none;text-align:center;vertical-align:middle;color:Blue;border-bottom:solid #FFF 1px;background-color:#E0FFFF}
+.css_link_L{height:19px;font-family:Times New Roman;font-size:14px;text-decoration:none;text-align:center;vertical-align:middle;color:Blue;border-bottom:solid #FFF 1px;background-color:#CFF}
+.css_link_D{height:19px;font-family:Times New Roman;font-size:14px;text-decoration:none;text-align:center;vertical-align:middle;color:Blue;border-bottom:solid #FFF 1px;background-color:#FFC0CB}
+.css_link_V{height:19px;font-family:Times New Roman;font-size:14px;text-decoration:none;text-align:center;vertical-align:middle;color:Blue;border-bottom:solid #FFF 1px;background-color:#FFFFE0}
+.css_link_T{height:19px;font-family:Times New Roman;font-size:14px;text-decoration:none;text-align:center;vertical-align:middle;color:Blue;border-bottom:solid #FFF 1px;background-color:#FFF}
+.css_ttrang_D{font-family:Times New Roman;font-size:15px;text-align:left;color:Blue;background-color:#FFC0CB}
+.css_menu_login{font-family:Arial;font-size:12px;text-align:left;color:#FFF;background-color:#ef7600;text-decoration:none;cursor:pointer;padding:5px}
+.css_menu_nhom{font-family:Arial;font-size:12px;text-align:left;vertical-align:middle;color:#000;background-color:#f6f6f6;cursor:pointer;text-decoration:none;font-weight:700;padding:5px}
+.css_menu_nhom_pan{font-family:Arial;font-size:12px;color:#000;background-color:#f6f6f6;text-decoration:none;border-color:#FFF #D9D9D9 #D9D9D9;border-style:solid;border-width:1px 1px 1px 0}
+.css_menu_nhom_pan:hover{background-color:#eee}
+.css_menu_item{font-family:Arial;font-size:12px;text-align:left;vertical-align:middle;color:#000;background-color:#F6F6F6;cursor:pointer;text-decoration:none;padding:5px}
+.css_menu_item_pan{font-family:Arial;font-size:12px;color:#FFF;background-color:#f6f6f6;text-decoration:none;border-color:#FFF #D9D9D9 #D9D9D9;border-style:solid;border-width:1px 1px 1px 0}
+.css_menu_col{font-family:Arial;font-size:12px;color:#FFF;background-color:#EF7600;border-bottom:solid 1px silver;text-decoration:none}
+.css_menu_ngan_nen{font-family:Arial;font-size:12px;color:#FFF;background-color:#D0E0B4;text-decoration:none;border-color:#FFF #D9D9D9 #D9D9D9;border-style:solid;border-width:1px 1px 1px 0}
+.css_menu_ngan_chu{font-family:Arial;font-size:12px;text-align:left;vertical-align:middle;color:Blue;background-color:#D0E0B4;cursor:pointer;text-decoration:none;padding:5px}
+.css_menu_table0{border:5px solid #E8EBEC}
+.css_ma,.css_so_l{font-family:Courier New;font-size:14px;text-align:left}
+.css_ma_c,.css_so_c{font-family:Courier New;font-size:14px;text-align:center}
+.css_ma_r,.css_so{font-family:Courier New;font-size:14px;text-align:right}
+.css_drop,.css_ttrang_X{font-family:Times New Roman;font-size:15px;text-align:left;color:Blue;background-color:#E0FFFF}

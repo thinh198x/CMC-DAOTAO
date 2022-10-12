@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="menuNen.master.cs" Inherits="trangnen" %>
+
+<%@ Register Src="~/App_ctr/khud/ctr_khud_divL.ascx" TagName="ctr_khud_divL" TagPrefix="ctr_khud_divL" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head runat="server">
+    <title>trangnen</title>
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="edocman.css" /> 
+    <script src="/js/jquery-3.3.1.js" type="text/javascript"></script>
+    <link rel="icon" sizes="128x128" href="~/images/icon/ce.ico" />
+    <link rel="icon" sizes="192x192" href="~/images/icon/ceT.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="~/images/icon/ce.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/icon/ceT.png" />
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no" /> 
+     <script type="text/javascript">
+         var clicked = false;        
+         function bodyUnload() {
+             if (clicked == false)//browser is closed
+             {
+                 form_P_DONG('', null);
+                 location.assign('login.aspx');
+             }
+         }
+    </script>
+</head>
+<body  onunload="bodyUnload();">
+    <form id="form1" runat="server" autocomplete="off">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" LoadScriptsBeforeUI="true"
+            EnablePageMethods="true" EnablePartialRendering="True" AsyncPostBackTimeout="0">
+            <Services>
+                <asp:ServiceReference Path="~/Service/skhac.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </form>
+</body>
+</html>

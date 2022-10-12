@@ -1,0 +1,11 @@
+hoten	String	100
+
+hso_cu	Number
+
+hso_moi	Number
+
+bac_tu	String	100
+bac_den	String	100
+p_ban	String	100
+
+gchu	String	100

@@ -1,0 +1,80 @@
+BODY, BODY.fe, .fe FORM, .fe P, .fe H1, .fe H2, .fe H3, .fe H4, .fe H5, .fe H6, .fe UL{padding:0; margin:0}
+header, nav, article, footer, address, section{display:block}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+fieldset,img { 
+	border:0;
+	vertical-align:bottom;
+}
+
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;}
+
+.fe IMG{border:none}
+.fe A{text-decoration:none; color:#363636; outline:none;}
+.fe A:hover{text-decoration:none; color:#f7941d;}
+.fe UL{list-style-type:none}
+.fe TD{padding:0; vertical-align:top;}
+.fe P{line-height:130%; padding:3px 0 5px 0;}
+
+.fll{float:left}
+.flr{float:right}
+
+
+.cc{text-align:center!important}
+.cl{text-align:left!important}
+.cr{text-align:right!important}
+.cj{text-align:justify!important}
+
+.upper{text-transform:uppercase}
+.notransform{text-transform:none !important}
+.block{display:block}
+.hidden{display:none}
+.bold{font-weight:bold}
+.italic{font-style:italic}
+.normal{font-weight:normal}
+
+.relative{position:relative}
+.absolute{position:absolute}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.hide_content {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+ 
+.clearfix:after {
+    clear: both;
+}
+ 
+/* IE6/7 support */
+.clearfix {
+    *zoom: 1;
+}
+
+.add_span{}
