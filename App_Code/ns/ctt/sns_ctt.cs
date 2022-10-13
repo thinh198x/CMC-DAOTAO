@@ -100,7 +100,7 @@ public class sns_ctt : System.Web.Services.WebService
     #endregion PHÊ DUYỆT KẾ HOẠCH ĐÀO TẠO CHI TIẾT
 
     #region ĐỀ XUẤT ĐÀO TẠO CỦA NHÂN VIÊN
-
+    
     [WebMethod(true)]
     public string Fs_NS_CTT_DXDT_LKE(string b_login, string b_so_the, double b_tt_pd, double[] a_tso, string[] a_cot)
     {
@@ -111,7 +111,12 @@ public class sns_ctt : System.Web.Services.WebService
             object[] a_object = ns_ctt.Fdt_NS_CTT_DXDT_LKE(b_so_the, b_tt_pd, b_tu_n, b_den_n);
             DataTable b_dt = (DataTable)a_object[1];
             this.Format_DXDT(b_dt);
+            
             return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
+
+
+            DataTable _dt = new DataTable();
+            (!_dt.Columns.Contains("ma")) _dt.Columns.Add("ma");
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message ); }
     }

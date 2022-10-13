@@ -29,7 +29,7 @@
     <dns>LOGIN</dns>
     <ten>Login</ten>
     <ma_dvi>Login</ma_dvi>
-    <ip>103.21.148.20</ip>
+    <ip>10.162.80.93</ip>
     <port>1521</port>
     <db>TCDN</db>
     <loai>ORA</loai>

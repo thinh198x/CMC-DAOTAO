@@ -54,6 +54,7 @@
 
             </div>
         </div>
-    </div>
+    </div>   
+
     <Cthuvien:an ID="kthuoc" runat="server" Value="900,550" />
 </asp:Content>
