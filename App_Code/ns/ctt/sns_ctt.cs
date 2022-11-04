@@ -113,6 +113,10 @@ public class sns_ctt : System.Web.Services.WebService
             this.Format_DXDT(b_dt);
             
             return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
+<<<<<<< HEAD
+=======
+            
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message ); }
     }
