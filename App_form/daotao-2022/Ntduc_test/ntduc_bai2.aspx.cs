@@ -29,7 +29,7 @@ public partial class bai2 : fmau
     {
         DataTable b_dt = null;
         DataTable b_ncd = null;
-        //Nganh nghe
+        //Nganh ngheg
         //DataTable b_dt = ns_hdns.Fdt_NS_HDNS_MA_NN_DROP_MA();
         //se.P_TG_LUU(this.Title, "DT_NN", b_dt);
         se.P_TG_LUU(this.Title, "DT_CM", null);

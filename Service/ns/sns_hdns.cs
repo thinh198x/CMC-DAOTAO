@@ -4914,9 +4914,8 @@ public class sns_hdns : System.Web.Services.WebService
 
     #endregion
 
-
-    #region NTDUC_BAI2  
-   
+<<<<<<< HEAD
+    #region NTDUC_BAI2
     [WebMethod(true)]
     public string Fs_NS_HDNS_NTDUC_BAI2_MA(string b_login, string b_ma, double b_trangkt, string[] a_cot)
     {
@@ -4954,45 +4953,24 @@ public class sns_hdns : System.Web.Services.WebService
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
-    [WebMethod(true)] private string Fs_NS_HDNS_NTDUC_BAI2_LKE(string b_login, double[] a_tso, string[] a_cot, string v1, string v2, string v3)
-    {
-        try
-        {
-            if (b_login != "") se.P_LOGIN(b_login);
-            double b_tu_n = chuyen.OBJ_N(a_tso[0]), b_den_n = chuyen.OBJ_N(a_tso[1]);
-            object[] a_object;
-            a_object = ns_hdns.Fdt_NS_HDNS_NTDUC_BAI2_LKE(b_tu_n, b_den_n);
-            DataTable b_dt = (DataTable)a_object[1];
-            bang.P_COPY_COL(ref b_dt, "ten_tt", "tthai");
-            bang.P_THAY_GTRI(ref b_dt, "ten_tt", "1", "Áp dụng");
-            bang.P_THAY_GTRI(ref b_dt, "ten_tt", "2", "Ngừng áp dụng");
-
-            bang.P_COPY_COL(ref b_dt, "ten_ncd", "ma_nnn");
-            bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "BDH", "Ban Điều Hành");
-            bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "QL", "Quản Lý");
-            bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "NV", "Nhân Viên");
-            return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
-        }
-        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
-    }
-
-    #endregion
-
+    [WebMethod(true)]
+    public string Fs_NS_HDNS_NTDUC_BAI2_LKE(string b_login, double[] a_tso, string[] a_cot)
+=======
     #region Tinbai2
     [WebMethod(true)]
     public string Fs_TIN_BAI2_LKE(string b_login, double[] a_tso, string[] a_cot, string b_nnn, string ma_cd, string ten_cd)
-
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
     {
         try
         {
             if (b_login != "") se.P_LOGIN(b_login);
             double b_tu_n = chuyen.OBJ_N(a_tso[0]), b_den_n = chuyen.OBJ_N(a_tso[1]);
             object[] a_object;
-
+<<<<<<< HEAD
             a_object = ns_hdns.Fdt_NS_HDNS_NTDUC_BAI2_LKE( b_tu_n, b_den_n);
-
+=======
             a_object = ns_hdns.Fdt_TIN_BAI2_LKE(b_nnn, ma_cd, ten_cd, b_tu_n, b_den_n);
-
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
             DataTable b_dt = (DataTable)a_object[1];
             bang.P_COPY_COL(ref b_dt, "ten_tt", "tt");
             bang.P_THAY_GTRI(ref b_dt, "ten_tt", "1", "Áp dụng");
@@ -5006,13 +4984,14 @@ public class sns_hdns : System.Web.Services.WebService
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
-
- 
-
+<<<<<<< HEAD
+    [WebMethod(true)]
+    public string Fs_NS_HDNS_NTDUC_BAI2_NH(string b_login, double b_trangKT, object[] a_dt_ct, string[] a_cot_lke)
+=======
 
     [WebMethod(true)]
     public string Fs_TIN_BAI2_NH(string b_login, double b_trangKT, object[] a_dt_ct, string[] a_cot_lke)
-
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
     {
         try
         {
@@ -5020,6 +4999,13 @@ public class sns_hdns : System.Web.Services.WebService
             string[] a_cot = chuyen.Fas_OBJ_STR((object[])a_dt_ct[0]);
             object[] a_gtri = (object[])a_dt_ct[1];
             DataTable b_dt_ct = bang.Fdt_TAO_THEM(a_cot, a_gtri);
+<<<<<<< HEAD
+            ns_hdns.P_NS_HDNS_NTDUC_BAI2_NH(b_dt_ct);
+            // ghi log
+            hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.NHAP, TEN_FORM.NS_HDNS_MA_VTCDANH, TEN_BANG.NS_HDNS_MA_VTCDANH);
+            string b_ma = mang.Fs_TEN_GTRI("ma", a_cot, a_gtri);
+            return Fs_NS_HDNS_NTDUC_BAI2_MA(b_login, b_ma, b_trangKT, a_cot_lke);
+=======
             ns_hdns.P_TIN_BAI2_NH(b_dt_ct);
             // ghi log
             hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.NHAP, TEN_FORM.NS_HDNS_MA_VTCDANH, TEN_BANG.NS_HDNS_MA_VTCDANH);
@@ -5071,14 +5057,16 @@ public class sns_hdns : System.Web.Services.WebService
             bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "NV", "Nhân Viên");
 
             return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
-
-     }
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+        }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
     [WebMethod(true)]
-
+<<<<<<< HEAD
+    public string Fs_NS_HDNS_NTDUC_BAI2_XOA(string b_login, string b_ma, double[] a_tso, string[] a_cot, object[] a_dt_ct)
+=======
     public string Fs_TIN_BAI2_XOA(string b_login, string b_ma, double[] a_tso, string[] a_cot, object[] a_dt_ct)
-
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
     {
         try
         {
@@ -5093,10 +5081,10 @@ public class sns_hdns : System.Web.Services.WebService
             {
                 double b_tontai = ht_dungchung.FTL_HOI_MA_TONTAI(ht_dungchung.NS_HDNS_GAN_CDANHDVI_CT, ht_dungchung.MA_CDANH_XOA, dr["ma"].ToString(), ref b_thongbao);
                 if (b_tontai <= 0)
-
-                { 
-
-                ns_hdns.P_TIN_BAI2_XOA(b_ma); return Fs_TIN_BAI2_LKE(b_login, a_tso, a_cot, "", "", ""); }
+<<<<<<< HEAD
+                { ns_hdns.P_NS_HDNS_NTDUC_BAI2_XOA(b_ma); return Fs_NS_HDNS_NTDUC_BAI2_LKE(b_login, a_tso, a_cot, "", "", ""); }
+=======
+                { ns_hdns.P_TIN_BAI2_XOA(b_ma); return Fs_TIN_BAI2_LKE(b_login, a_tso, a_cot, "", "", ""); }
                 else { b_ma_trung += dr["ma"].ToString() + ", "; }
             }
             // ghi log
@@ -5176,7 +5164,7 @@ public class sns_hdns : System.Web.Services.WebService
                 double b_tontai = ht_dungchung.FTL_HOI_MA_TONTAI(ht_dungchung.NS_HDNS_GAN_CDANHDVI_CT, ht_dungchung.MA_CDANH_XOA, dr["ma"].ToString(), ref b_thongbao);
                 if (b_tontai <= 0)
                 { ns_hdns.P_TIN_BT3_XOA(b_ma); return Fs_TIN_BT3_LKE(b_login, a_tso, a_cot); }
-
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
                 else { b_ma_trung += dr["ma"].ToString() + ", "; }
             }
             // ghi log
@@ -5187,25 +5175,54 @@ public class sns_hdns : System.Web.Services.WebService
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
 
-     [WebMethod(true)]
-    public string Fs_TIN_BT3_CT(string b_login, string b_ma)
-     {
+<<<<<<< HEAD
+    private string Fs_NS_HDNS_NTDUC_BAI2_LKE(string b_login, double[] a_tso, string[] a_cot, string v1, string v2, string v3)
+    {
         try
         {
             if (b_login != "") se.P_LOGIN(b_login);
-           DataSet b_ds = ns_hdns.Fds_TIN_BT3_CT(b_ma);
-            DataTable b_dt = b_ds.Tables[0];
-            DataTable b_dt_tt = b_ds.Tables[1];
+            double b_tu_n = chuyen.OBJ_N(a_tso[0]), b_den_n = chuyen.OBJ_N(a_tso[1]);
+            object[] a_object;
+            a_object = ns_hdns.Fdt_NS_HDNS_NTDUC_BAI2_LKE(b_tu_n, b_den_n);
+            DataTable b_dt = (DataTable)a_object[1];
+            bang.P_COPY_COL(ref b_dt, "ten_tt", "tthai");
+            bang.P_THAY_GTRI(ref b_dt, "ten_tt", "1", "Áp dụng");
+            bang.P_THAY_GTRI(ref b_dt, "ten_tt", "2", "Ngừng áp dụng");
+
+            bang.P_COPY_COL(ref b_dt, "ten_ncd", "ma_nnn");
+            bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "BDH", "Ban Điều Hành");
+            bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "QL", "Quản Lý");
+            bang.P_THAY_GTRI(ref b_dt, "ten_ncd", "NV", "Nhân Viên");
+            return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+
+    #endregion
+    #region ntducbai3
+    [WebMethod(true)]
+    public string Fs_NS_PB_NTDUC_LKE(string b_login, string b_ngay_tu, string b_ngay_den, string[] a_cot, double[] a_tso)
+=======
+    [WebMethod(true)]
+    public string Fs_TIN_BT3_CT(string b_login, string b_ma)
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+    {
+        try
+        {
+            if (b_login != "") se.P_LOGIN(b_login);
+<<<<<<< HEAD
+            object[] a_obj = ns_hdns.Fdt_NS_PB_NTDUC_LKE(b_ngay_tu, b_ngay_den, (double)a_tso[0], (double)a_tso[1]);
+            DataTable b_dt = (DataTable)a_obj[1];
             bang.P_SO_CNG(ref b_dt, "ngay_tl");
             bang.P_SO_CNG(ref b_dt, "ngay_gt");
             //bang.P_SO_CNG(ref b_dt, "ngayd,ngayc,ngay_tl");
             //return bang.Fb_TRANG(b_dt) ? "#" : chuyen.OBJ_S(a_obj[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
-            return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
+            return chuyen.OBJ_S(a_obj[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
-    #endregion
-    #region ntducbai3
+
+
     [WebMethod(true)]
     public string Fs_NS_PB_NTDUC_CT(string b_login, string b_ma)
     {
@@ -5213,23 +5230,28 @@ public class sns_hdns : System.Web.Services.WebService
         {
             if (b_login != "") se.P_LOGIN(b_login);
             DataSet b_ds = ns_hdns.Fdt_NS_PB_NTDUC_CT(b_ma);
-    //object[] a_obj = ns_hdns.Fdt_NS_PB_NTDUC_LKE(b_ngay_tu, b_ngay_den, (double)a_tso[0], (double)a_tso[1]);
-           
-             DataTable b_dt = b_ds.Tables[0];
+=======
+            DataSet b_ds = ns_hdns.Fds_TIN_BT3_CT(b_ma);
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+            DataTable b_dt = b_ds.Tables[0];
             DataTable b_dt_tt = b_ds.Tables[1];
             bang.P_SO_CNG(ref b_dt, "ngay_tl");
             bang.P_SO_CNG(ref b_dt, "ngay_gt");
-             se.P_TG_LUU("ns_hdns_pban_ntduc", "DT_TT", b_dt_tt);
+<<<<<<< HEAD
+            se.P_TG_LUU("ns_hdns_pban_ntduc", "DT_TT", b_dt_tt);
             bang.P_TIM_THEM(ref b_dt, "ns_hdns_pban_ntduc", "DT_TT", "MA_TT");
- 
+=======
+
             se.P_TG_LUU("ns_hdns_bt3_tin", "DT_TT", b_dt_tt);
             bang.P_TIM_THEM(ref b_dt, "ns_hdns_bt3_tin", "DT_TT", "ma_tt");
 
-             return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+            return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
- 
+<<<<<<< HEAD
+
 
     public string Fs_NS_PB_NTDUC_MA(string b_login, string b_ma, double b_trangkt, string[] a_cot)
     {
@@ -5268,36 +5290,62 @@ public class sns_hdns : System.Web.Services.WebService
     }
 
 
-   
-    //public string Fs_NS_PB_NTDUC_XOA(string b_login, string b_ma, double[] a_tso, string[] a_cot, object[] a_dt_ct, string b_ngay_tu, string b_ngay_den)
-    //{
-    //    try
-    //    {
-    //        if (b_login != "") se.P_LOGIN(b_login);
-    //        string[] a_cot_ct = chuyen.Fas_OBJ_STR((object[])a_dt_ct[0]);
-    //        object[] a_gtri_ct = (object[])a_dt_ct[1];
-    //        DataTable b_dt_ct = bang.Fdt_TAO_THEM(a_cot_ct, a_gtri_ct);
-    //        bang.P_BO_COT(ref b_dt_ct, "CHON");
-    //        string b_thongbao = "";
-    //        string b_ma_trung = "";
-    //        foreach (DataRow dr in b_dt_ct.Rows)
-    //        {
-    //            double b_tontai = ht_dungchung.FTL_HOI_MA_TONTAI(ht_dungchung.NS_HDNS_GAN_CDANHDVI_CT, ht_dungchung.MA_CDANH_XOA, dr["ma"].ToString(), ref b_thongbao);
-    //            if (b_tontai <= 0)
-    // //           { ns_hdns.P_NS_PB_NTDUC_XOA(b_ma); return Fs_NS_PB_NTDUC_LKE(b_login, b_ngay_tu, b_ngay_den, a_cot, a_tso); }
-    //            else { b_ma_trung += dr["ma"].ToString() + ", "; }
-    //        }
-    //        // ghi log
-    //        hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.XOA, TEN_FORM.NS_HDNS_PBAN_NTDUC, TEN_BANG.NS_MA_PBAN_LONGBAI3);
-    //        if (b_ma_trung == "") return "loi:Xóa thành công:loi";
-    //        else return "loi:Xóa thành công,tồn tại mã " + b_ma_trung + " đã được sử dụng không thể xóa:loi";
-    //    }
-    //    catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
-    //}
+    [WebMethod(true)]
+    public string Fs_NS_PB_NTDUC_XOA(string b_login, string b_ma, double[] a_tso, string[] a_cot, object[] a_dt_ct, string b_ngay_tu, string b_ngay_den)
+    {
+        try
+        {
+            if (b_login != "") se.P_LOGIN(b_login);
+            string[] a_cot_ct = chuyen.Fas_OBJ_STR((object[])a_dt_ct[0]);
+            object[] a_gtri_ct = (object[])a_dt_ct[1];
+            DataTable b_dt_ct = bang.Fdt_TAO_THEM(a_cot_ct, a_gtri_ct);
+            bang.P_BO_COT(ref b_dt_ct, "CHON");
+            string b_thongbao = "";
+            string b_ma_trung = "";
+            foreach (DataRow dr in b_dt_ct.Rows)
+            {
+                double b_tontai = ht_dungchung.FTL_HOI_MA_TONTAI(ht_dungchung.NS_HDNS_GAN_CDANHDVI_CT, ht_dungchung.MA_CDANH_XOA, dr["ma"].ToString(), ref b_thongbao);
+                if (b_tontai <= 0)
+                { ns_hdns.P_NS_PB_NTDUC_XOA(b_ma); return Fs_NS_PB_NTDUC_LKE(b_login, b_ngay_tu, b_ngay_den, a_cot, a_tso); }
+                else { b_ma_trung += dr["ma"].ToString() + ", "; }
+            }
+            // ghi log
+            hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.XOA, TEN_FORM.NS_HDNS_PBAN_NTDUC, TEN_BANG.NS_MA_PBAN_LONGBAI3);
+            if (b_ma_trung == "") return "loi:Xóa thành công:loi";
+            else return "loi:Xóa thành công,tồn tại mã " + b_ma_trung + " đã được sử dụng không thể xóa:loi";
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
 
     #endregion
     #region duc 4
-    
+    [WebMethod(true)]
+    public string Fs_NTDUC_B4_LKE(string b_login, double[] a_tso, string[] a_cot)
+=======
+    #endregion
+
+    #region Tinbai4
+    [WebMethod(true)]
+    public string Fs_TIN_BAI4_LKE(string b_login, double[] a_tso, string[] a_cot)
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+    {
+        try
+        {
+            if (b_login != "") se.P_LOGIN(b_login);
+            double b_tu_n = chuyen.OBJ_N(a_tso[0]), b_den_n = chuyen.OBJ_N(a_tso[1]);
+<<<<<<< HEAD
+            object[] a_object = ns_hdns.Fdt_NTDUC_4_LKE(b_tu_n, b_den_n); ;
+=======
+            object[] a_object = ns_hdns.Fdt_TIN_BAI4_LKE(b_tu_n, b_den_n); ;
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+            DataTable b_dt = (DataTable)a_object[1];
+            bang.P_SO_CNG(ref b_dt, "ngay_tl");
+            bang.P_SO_CNG(ref b_dt, "ngay_ad");
+            return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+<<<<<<< HEAD
     [WebMethod(true)]
     public string Fs_NTDUC_B4_CT(string b_login, string b_ma)
     {
@@ -5306,16 +5354,15 @@ public class sns_hdns : System.Web.Services.WebService
             if (b_login != "") se.P_LOGIN(b_login);
             DataSet b_ds = ns_hdns.Fdt_NTDUC_4_CT(b_ma);
             DataTable b_dt = b_ds.Tables[0];
-
+           
             bang.P_SO_CNG(ref b_dt, "ngay_tl");
             bang.P_SO_CNG(ref b_dt, "ngay_ad");
-
-
+            
+ 
             return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
-    [WebMethod(true)]
     public string Fs_NTDUC_B4_MA(string b_login, string b_ma, double b_trangkt, string[] a_cot)
     {
         try
@@ -5333,49 +5380,47 @@ public class sns_hdns : System.Web.Services.WebService
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
 
-    #endregion
-
-    #region Tinbai4
     [WebMethod(true)]
-    public string Fs_TIN_BAI4_LKE(string b_login, double[] a_tso, string[] a_cot)
-
-    {
-        try
-        {
-            if (b_login != "") se.P_LOGIN(b_login);
-            double b_tu_n = chuyen.OBJ_N(a_tso[0]), b_den_n = chuyen.OBJ_N(a_tso[1]);
-
- 
-            object[] a_object = ns_hdns.Fdt_TIN_BAI4_LKE(b_tu_n, b_den_n); ;
- 
-            DataTable b_dt = (DataTable)a_object[1];
-            bang.P_SO_CNG(ref b_dt, "ngay_tl");
-            bang.P_SO_CNG(ref b_dt, "ngay_ad");
-            return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
-        }
-        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
-    }
- 
+    public string NTDUC_BAI4_NH(string b_login, double b_trangKT, object[] a_dt_ct, string[] a_cot_lke)
+=======
 
     [WebMethod(true)]
     public string Fs_TIN_BAI4_NH(string b_login, double b_trangKT, object[] a_dt_ct, string[] a_cot_lke)
-     {
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+    {
         try
         {
             if (b_login != "") se.P_LOGIN(b_login);
             string[] a_cot = chuyen.Fas_OBJ_STR((object[])a_dt_ct[0]);
             object[] a_gtri = (object[])a_dt_ct[1];
+<<<<<<< HEAD
+            DataTable b_dt = bang.Fdt_TAO_THEM(a_cot, a_gtri);
+
+            bang.P_CNG_SO(ref b_dt, "ngay_tl");
+            bang.P_CNG_SO(ref b_dt, "ngay_ad");
+            ns_hdns.NTDUC_BAI4_NH(b_dt);
+            // ghi log
+            hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.NHAP, TEN_FORM.NS_HDNS_MA_VTCDANH, TEN_BANG.NS_HDNS_MA_VTCDANH);
+            string b_ma = mang.Fs_TEN_GTRI("ma", a_cot, a_gtri);
+            return Fs_NTDUC_B4_MA(b_login, b_ma, b_trangKT, a_cot_lke);
+=======
             DataTable b_dt_ct = bang.Fdt_TAO_THEM(a_cot, a_gtri);
             bang.P_CNG_SO(ref b_dt_ct, "ngay_tl");
             bang.P_CNG_SO(ref b_dt_ct, "ngay_ad");
             ns_hdns.P_TIN_BAI4_NH(b_dt_ct);
             string b_ma = mang.Fs_TEN_GTRI("ma", a_cot, a_gtri);
             return Fs_TIN_BAI4_MA(b_login, b_ma, b_trangKT, a_cot_lke);
-         }
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
+        }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
 
-     [WebMethod(true)]
+<<<<<<< HEAD
+
+    [WebMethod(true)]
+    public string NTDUC_B4_XOA(string b_login, string b_ma, double[] a_tso, string[] a_cot, object[] a_dt_ct)
+=======
+    [WebMethod(true)]
     public string Fs_TIN_BAI4_MA(string b_login, string b_ma, double b_trangkt, string[] a_cot)
     {
         try
@@ -5405,6 +5450,7 @@ public class sns_hdns : System.Web.Services.WebService
     }
     [WebMethod(true)]
     public string Fs_TIN_BAI4_XOA(string b_login, string b_ma, double[] a_tso, string[] a_cot, object[] a_dt_ct)
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
     {
         try
         {
@@ -5419,26 +5465,28 @@ public class sns_hdns : System.Web.Services.WebService
             {
                 double b_tontai = ht_dungchung.FTL_HOI_MA_TONTAI(ht_dungchung.NS_HDNS_GAN_CDANHDVI_CT, ht_dungchung.MA_CDANH_XOA, dr["ma"].ToString(), ref b_thongbao);
                 if (b_tontai <= 0)
-                {
-
-                    ns_hdns.P_TIN_BAI4_XOA(b_ma); return Fs_TIN_BAI4_LKE(b_login, a_tso, a_cot);
-                }
+<<<<<<< HEAD
+                { ns_hdns.NTDUC_XOA(b_ma); return Fs_NTDUC_B4_LKE(b_login,a_tso,a_cot); }
+                else { b_ma_trung += dr["ma"].ToString() + ", "; }
+            }
+            // ghi log
+            hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.XOA, TEN_FORM.NS_HDNS_PBAN_NTDUC, TEN_BANG.NS_MA_PBAN_LONGBAI3);
+=======
+                { ns_hdns.P_TIN_BAI4_XOA(b_ma); return Fs_TIN_BAI4_LKE(b_login, a_tso, a_cot); }
                 else { b_ma_trung += dr["ma"].ToString() + ", "; }
             }
             // ghi log
             hts_dungchung.PHT_LOG_NH(PHANHE.HDNS, NHOM_CHUCNANG.NGHIEP_VU, THAOTAC.XOA, TEN_FORM.NS_HDNS_MA_VTCDANH, TEN_BANG.NS_HDNS_MA_VTCDANH);
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
             if (b_ma_trung == "") return "loi:Xóa thành công:loi";
             else return "loi:Xóa thành công,tồn tại mã " + b_ma_trung + " đã được sử dụng không thể xóa:loi";
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     }
-        
-    }
-
- 
-
-
-
+<<<<<<< HEAD
+}
+    #endregion
+=======
 
     //[WebMethod(true)]
     //public string Fs_TIN_BAI4_LKE(string b_login, double[] a_tso, string[] a_cot)
@@ -5457,5 +5505,5 @@ public class sns_hdns : System.Web.Services.WebService
     //    catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
     //}
     #endregion
-
- 
+}
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
