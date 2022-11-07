@@ -43,9 +43,13 @@
 
 
                     <div class="b_left form-group iterm_form">
-                        <span class="standard_label lv2 b_left col_30">f_tkhao="~/App_form/ns/hdns/dm/cdanh/ns_hdns_ma_nnn.aspx"</span>
+                        <span class="standard_label lv2 b_left col_30">f_tkhao="~/App_form/daotao-2022/Ntduc_test/ntduc_bai2.aspx"</span>
                         <div class="input-group">
+<<<<<<< HEAD
+                            <Cthuvien:ma ID="NHOM_CDANH" f_tkhao="~/App_form/daotao-2022/Ntduc_test/ntduc_bai2.aspx" runat="server" CssClass="form-control css_ma" kieu_chu="True" kt_xoa="G" ten="Nhóm chức danh" BackColor="#f6f7f7"
+=======
                             <Cthuvien:ma ID="NHOM_CDANH" f_tkhao="~/App_form/daotao-2022/TINTC/Bai2/Bai2_TINTC.aspx" runat="server" CssClass="form-control css_ma" kieu_chu="True" kt_xoa="G" ten="Nhóm chức danh" BackColor="#f6f7f7"
+>>>>>>> f3d2b32beddd5a3e2cac54262998a00f31adcf26
                                 placeholder="Nhấn (F1)" Width="200px" />
                             <Cthuvien:ma ID="TEN_NHOM_CDANH" runat="server" CssClass="form-control css_ma" kieu_unicode="true" kt_xoa="G" />
                         </div>
