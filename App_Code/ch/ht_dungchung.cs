@@ -11,7 +11,7 @@ using System.Net.NetworkInformation;
 /// 
 public class ht_dungchung
 {
-    public static string b_ver = "2.1.2.15";
+    public static string b_ver = "2.1.2.15" + Guid.NewGuid();
 
     #region Chức năng ghi log hệ thống
     public static void PHT_LOG(string b_phanhe, string b_nhom_chucnang, string b_thaotac, string b_chucnang, string b_bang_thaotac)

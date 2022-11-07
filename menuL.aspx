@@ -96,6 +96,7 @@
             <!-- Container SideBar -->
             <div id="divMenuM" class="menu_sidebarM">
                 <div id="divMenu" class="menu_sidebar"></div>
+           
             </div>
             <!-- Container Content -->
             <div id="VFChinh" class="menu_frame">

@@ -1265,6 +1265,40 @@ public class ns_ma
 
     #endregion MÃ TỈNH
 
+    #region NTDUC_BAI1
+    public static DataTable Fdt_NS_NTDUC_BAI1_DR()
+    {
+        return dbora.Fdt_LKE("NTDUC_BAI1_DR");
+    }
+
+    public static object[] Fdt_NS_NTDUC_BAI1_LKE(double b_tu_n, double b_den_n, string b_tt)
+    {
+        return dbora.Faobj_LKE(new object[] { b_tu_n, b_den_n, b_tt }, "NR", "NTDUC_BAI1_LKE");
+    }
+    public static void P_NS_NTDUC_BAI1_NH(DataTable b_dt, ref string b_ma)
+    {
+        DataRow b_dr = b_dt.Rows[0];
+        bool b_kiemtra = ht_dungchung.Fdt_kiemtra_tontai(b_dr["MA"].ToString(), "DAOTAO_BAI1", "MA");
+        if (b_kiemtra == false)
+        {
+            b_dr["ma"] = ht_dungchung.Fdt_AutoGenCode("T", "DAOTAO_BAI1", "MA");
+        }
+        dbora.P_GOIHAM(new object[] { b_dr["ma"], b_dr["ten"], b_dr["tt"] }, "NTDUC_BAI1_NH");
+        b_ma = b_dr["ma"].ToString();
+    }
+    public static object[] Fdt_NS_NTDUC_BAI1_MA(string b_ma, double b_trangkt)
+    {
+        return dbora.Faobj_LKE(new object[] { b_ma, b_trangkt }, "NNR", "NTDUC_BAI1_MA");
+    }
+    /////delete
+    ///
+    public static void P_NS_NTDUC_BAI1_XOA(string b_ma)
+    {
+        dbora.P_GOIHAM(b_ma, "NTDUC_BAI1_XOA");
+    }
+
+    #endregion
+
     #region NHNAM_BAI1
 
     ///<summary>Liệt kê số liệu drop</summary>
@@ -1303,7 +1337,9 @@ public class ns_ma
     }
     #endregion
 
-#region MÃ TINH THANH
+ 
+
+    #region MÃ TINH THANH
     ///<summary>Liệt kê số liệu drop</summary>
     public static DataTable Fdt_NS_MA_TINHTHANH_DR()
     {
@@ -4002,6 +4038,8 @@ public class ns_ma
         return dbora.Fdt_LKE("PNS_MA_CCHN_DR");
     }
 
+ 
+
     /// <summary>Liệt kê toàn bộ số liệu</summary>
     public static object[] Fdt_NS_MA_CCHN_LKE(double b_tu_n, double b_den_n, string b_tt)
     {
@@ -4189,7 +4227,6 @@ public class ns_ma
     }
     #endregion ĐÀO TẠO
 
-
     #region Quang_BaiTap1
 
 
@@ -4229,6 +4266,71 @@ public class ns_ma
         dbora.P_GOIHAM(b_ma, "PNS_QUANG_BAI1_XOA");
     }
 
+    #endregion
+
+    #region TIN_BaiTap1
+
+    public static object[] Fdt_TIN_BAI1_MA(string b_ma, double b_trangkt)
+    {
+        return dbora.Faobj_LKE(new object[] { b_ma, b_trangkt }, "NNR", "PNS_TIN_BAI1_MA");
+    }
+
+    public static object[] Fdt_TIN_BAI1_LKE(double b_tu_n, double b_den_n)
+    {
+        return dbora.Faobj_LKE(new object[] { b_tu_n, b_den_n }, "NR", "PNS_TIN_BAI1_LKE");
+    }
+
+    public static DataTable Fdt_NS_TIN_BAI1_DR()
+    {
+        return dbora.Fdt_LKE("PNS_TIN_BAI1_DR");
+    }
+    public static void P_TIN_BAI1_NH(DataTable b_dt, ref string b_ma)
+    {
+        DataRow b_dr = b_dt.Rows[0];
+        bool b_kiemtra = ht_dungchung.Fdt_kiemtra_tontai(b_dr["MA"].ToString(), "DAOTAO_BAI1", "MA");
+        if (b_kiemtra == false)
+        {
+            b_dr["ma"] = ht_dungchung.Fdt_AutoGenCode("T", "DAOTAO_BAI1", "MA");
+        }
+        dbora.P_GOIHAM(new object[] { b_dr["ma"], b_dr["ten"], b_dr["tt"] }, "PNS_TIN_BAI1_NH");
+        b_ma = b_dr["ma"].ToString();
+    }
+
+    /// <summary>Xóa thôn tin</summary>
+    public static void P_TIN_BAI1_XOA(string b_ma)
+    {
+        dbora.P_GOIHAM(b_ma, "PNS_TIN_BAI1_XOA");
+    }
+
+    public static DataSet Fds_TIN_BAI1_CT(string b_ma)
+    {
+        return dbora.Fds_LKE(b_ma, 1, "PNS_TIN_BAI1_CT");
+    }
+    #endregion
+    #region TIN_BaiTap4
+
+    public static object[] Fdt_TIN_BAI4_LKE(double b_tu_n, double b_den_n)
+    {
+        return dbora.Faobj_LKE(new object[] { b_tu_n, b_den_n }, "NR", "PNS_TIN_BAI4_LKE");
+    }
+
+    public static void P_TIN_BAI4_NH(DataTable b_dt, ref string b_ma)
+    {
+        DataRow b_dr = b_dt.Rows[0];
+        bool b_kiemtra = ht_dungchung.Fdt_kiemtra_tontai(b_dr["MA"].ToString(), "DAOTAO_BAI4", "MA");
+        dbora.P_GOIHAM(new object[] { b_dr["ma"], b_dr["ten"], b_dr["tt"] }, "PNS_TIN_BAI4_NH");
+        b_ma = b_dr["ma"].ToString();
+    }
+
+    public static object[] Fdt_TIN_BAI4_MA(string b_ma, double b_trangkt)
+    {
+        return dbora.Faobj_LKE(new object[] { b_ma, b_trangkt }, "NNR", "PNS_TIN_BAI4_MA");
+    }
+
+    public static DataSet Fds_TIN_BAI4_CT(string b_ma)
+    {
+        return dbora.Fds_LKE(b_ma, 1, "PNS_TIN_BAI4_CT");
+    }
     #endregion
 
 }
