@@ -7491,4 +7491,91 @@ public class sns_ma_ch : System.Web.Services.WebService
     }
 
     #endregion
+
+    #region NAM_BaiTap1
+
+    /// <summary> liệt kê </summary>
+    [WebMethod(true)]
+    public string Fs_NAM_BAI1_LKE(double[] a_tso, string[] a_cot)
+    {
+        try
+        {
+            double b_tu_n = chuyen.OBJ_N(a_tso[0]), b_den_n = chuyen.OBJ_N(a_tso[1]);
+            object[] a_object = ns_ma.Fdt_NAM_BAI1_LKE(b_tu_n, b_den_n); ;
+            DataTable b_dt = (DataTable)a_object[1];
+
+
+            bang.P_COPY_COL(ref b_dt, "TEN_TT", "TT");
+
+            bang.P_THAY_GTRI(ref b_dt, "TEN_TT", 1, "Áp dụng");
+            bang.P_THAY_GTRI(ref b_dt, "TEN_TT", 2, "Ngừng áp dụng");
+
+            return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+
+    [WebMethod(true)]
+    public string Fs_NAM_BAI1_MA(string b_ma, double b_trangkt, string[] a_cot)
+    {
+        try
+        {
+            object[] a_object = ns_ma.Fdt_NAM_BAI1_MA(b_ma, b_trangkt);
+            DataTable b_dt = (DataTable)a_object[2];
+            bang.P_COPY_COL(ref b_dt, "TEN_TT", "TT");
+            bang.P_THAY_GTRI(ref b_dt, "TT", 2, "Ngừng áp dụng");
+            bang.P_THAY_GTRI(ref b_dt, "TT", 1, "Áp dụng");
+            int b_hang = bang.Fi_TIM_ROW(b_dt, "ma");
+            return b_hang.ToString() + "#" + chuyen.OBJ_S(a_object[0]) + "#" + chuyen.OBJ_S(a_object[1]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+
+    [WebMethod(true)]
+    public string Fs_NAM_BAI1_NH(double b_trangKT, object[] a_dt_ct, string[] a_cot_lke)
+    {
+        try
+        {
+            string[] a_cot = chuyen.Fas_OBJ_STR((object[])a_dt_ct[0]);
+            object[] a_gtri = (object[])a_dt_ct[1];
+            DataTable b_dt_ct = bang.Fdt_TAO_THEM(a_cot, a_gtri);
+            string b_ma = "";
+            ns_ma.P_NAM_BAI1_NH(b_dt_ct, ref b_ma);
+            hts_dungchung.PHT_LOG_NH(PHANHE.NS, NHOM_CHUCNANG.DANH_MUC, THAOTAC.NHAP, TEN_FORM.NS_MA_NUOC, TEN_BANG.NS_MA_NUOC);
+            return Fs_NAM_BAI1_MA(b_ma, b_trangKT, a_cot_lke);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+
+    [WebMethod(true)]
+    public string Fs_NAM_BAI1_XOA(string b_ma, double[] a_tso, string[] a_cot)
+    {
+        try
+        {
+            ns_ma.P_NAM_BAI1_XOA(b_ma);
+            hts_dungchung.PHT_LOG_NH(PHANHE.NS, NHOM_CHUCNANG.DANH_MUC, THAOTAC.XOA, TEN_FORM.NS_MA_NUOC, TEN_BANG.NS_MA_NUOC);
+            return Fs_NAM_BAI1_LKE(a_tso, a_cot);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+
+    [WebMethod(true)]
+    public string Fs_NAM_BAI1_CT(string b_login, string b_ma)
+    {
+        try
+        {
+            if (b_login != "") se.P_LOGIN(b_login);
+            DataSet b_ds = ns_ma.Fds_NAM_BAI1_CT(b_ma);
+            DataTable b_dt = b_ds.Tables[0];
+            bang.P_COPY_COL(ref b_dt, "TEN_TT", "TT");
+            bang.P_THAY_GTRI(ref b_dt, "TEN_TT", 2, "Ngừng áp dụng");
+            bang.P_THAY_GTRI(ref b_dt, "TEN_TT", 1, "Áp dụng");
+
+            return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
+            return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
+        }
+        catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
+    }
+  
+    #endregion
 }
