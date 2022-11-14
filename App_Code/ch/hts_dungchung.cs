@@ -896,6 +896,8 @@ public class TEN_FORM
     public static string NS_TK_MA_CHITIEU = "Chỉ tiêu";
     public static string NS_MA_KQ_HIENTHI = "Kết quả hiển thị";
     public static string NS_HDNS_PBAN_LONGBAI3 = "Danh mục phòng ban";
+    public static string NS_HDNS_PBAN_NTDUC = "Danh mục phòng ban";
+
     // thiết lập hồ sơ
     public static string NS_TL_HTRO_ANTRUA_VUNG = "Thiết lập hỗ trợ ăn trưa theo vùng";
     public static string NS_TL_HTRO_ANTRUA_PHONG = "Thiết lập hỗ trợ ăn trưa theo vùng";
@@ -1161,6 +1163,8 @@ public class TEN_BANG
     public static string NS_HDNS_MA_BACLUONG = "NS_HDNS_MA_BACLUONG";
     public static string HDNS_MOTA_CV = "NS_HDNS_MA_MOTA_CV";
     public static string NS_MA_PBAN_LONGBAI3 = "NS_HDNS_PBAN_LONGBAI3";
+    public static string NS_MA_PBAN_NTDUC = "NS_HDNS_PBAN_NTDUC";
+    public static string NS_MA_PBAN_NTDUC4 = "NS_HDNS_PBAN_NTDUC4";
 
     // Nghiệp vụ phần tuyển dụng
     public static string NS_TD_KH_NAM = "NS_TD_KH_NAM";

@@ -113,10 +113,7 @@ public class sns_ctt : System.Web.Services.WebService
             this.Format_DXDT(b_dt);
             
             return chuyen.OBJ_S(a_object[0]) + "#" + bang.Fs_BANG_CH(b_dt, a_cot);
-
-
-            DataTable _dt = new DataTable();
-            (!_dt.Columns.Contains("ma")) _dt.Columns.Add("ma");
+ 
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message ); }
     }
