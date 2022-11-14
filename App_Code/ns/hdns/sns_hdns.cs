@@ -5752,6 +5752,8 @@ public class sns_hdns : System.Web.Services.WebService
             if (b_login != "") se.P_LOGIN(b_login);
             DataSet b_ds = ns_hdns.Fds_NAM_BAI4_CT(b_ma);
             DataTable b_dt = b_ds.Tables[0];
+            bang.P_SO_CNG(ref b_dt, "ngay_tl");
+            bang.P_SO_CNG(ref b_dt, "ngay_ad");
             return (bang.Fb_TRANG(b_dt)) ? "" : bang.Fs_HANG_GOP(b_dt, 0);
         }
         catch (Exception ex) { return form.Fs_LOC_LOI(ex.Message); }
